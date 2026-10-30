@@ -1,6 +1,11 @@
 ---
 template: deck
 theme: black
+cover:
+  title: 把 markdown 变成一场演讲
+  subtitle: 一个长链接就是入口
+  author: x-cmd
+  date: 2026-10-31
 ---
 
 <!-- .slide: data-layout="title" -->
