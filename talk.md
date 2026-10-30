@@ -47,6 +47,8 @@ https://x-cmd.com/ppt?url=<markdown 链接>
 
 点它 → 打开这份演示。图片显示尺寸用 HTML 的 `width` 属性控制。
 
+(自演示跑在测试实例 `po6.sh/ppt`,与正式地址 `x-cmd.com/ppt` 是同一份代码。)
+
 --
 
 ## 三个现成的案例
