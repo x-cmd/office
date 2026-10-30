@@ -1,3 +1,8 @@
+---
+template: deck
+theme: black
+---
+
 # 把 markdown 变成一场演讲
 
 **一个长链接就是入口** —— 贴进 README,别人点开就能讲。
