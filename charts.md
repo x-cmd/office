@@ -1,10 +1,10 @@
 # 图表
 
-## 封面图与内联图表的玩法
+封面图与内联图表的玩法。
 
 ---
 
-# 一 · 封面图
+# 封面图
 
 ## 一条链接,一张 SVG
 
@@ -49,15 +49,11 @@ SVG 内嵌的是 **SMIL** 动画(HTML 标准在 `<img>` 上下文明确允许)�
 
 ---
 
-# 二 · 图表
-
-图表是**内联 SVG** —— 矢量、可缩放,不是图片。
-
---
+# 内联图表
 
 ## 围栏里写参数
 
-服务端把围栏展开成内联 SVG,浏览器原生渲染:
+服务端把围栏展开成**内联 SVG**,浏览器原生渲染 —— 矢量、可缩放,不是图片:
 
 ```draw
 type=bar&labels=Jan,Feb,Mar&values=3,5,4&w=560&h=300
@@ -79,7 +75,7 @@ type=bar&labels=Jan,Feb,Mar&values=3,5,4&w=560&h=300
 
 ## 或者直接贴 draw 的链接
 
-[![各模块行数](https://x-cmd.com/draw?type=bar&labels=排版,取数,路由,页面&values=615,272,263,327&w=560&h=300)](https://x-cmd.com/draw/explore?type=bar&labels=排版,取数,路由,页面&values=615,272,263,327)
+[![各模块行数](https://x-cmd.com/draw?type=bar&t=xcmd&labels=排版,取数,路由,页面&values=615,272,263,327&w=560&h=300)](https://x-cmd.com/draw/explore?type=bar&t=xcmd&labels=排版,取数,路由,页面&values=615,272,263,327)
 
 指向图表服务的图片,同样会被内联成原生 SVG。
 
@@ -93,16 +89,13 @@ type=bar&labels=Jan,Feb,Mar&values=3,5,4&w=560&h=300
 
 ---
 
-# 三 · 三个案例
+# 三个案例
 
 ## 现成的 deck
 
 - **本 deck** —— 图表与封面图的玩法
-  [开讲](https://po6.sh/ppt?url=https://raw.githubusercontent.com/x-cmd/office/main/charts.md)
 - **五分钟** —— 写 deck 的语法速查
-  [开讲](https://po6.sh/ppt?url=https://raw.githubusercontent.com/x-cmd/office/main/quickstart.md)
-- **把 markdown 变成一场演讲** —— 项目本身
-  [开讲](https://po6.sh/ppt?url=https://raw.githubusercontent.com/x-cmd/office/main/talk.md)
+- **draw** —— 把数据变成一张图
 
 ---
 
