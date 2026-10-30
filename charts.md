@@ -1,6 +1,11 @@
 ---
 template: center
 theme: black
+cover:
+  title: 图表
+  subtitle: 封面图与内联图表的玩法
+  author: x-cmd
+  date: 2026-10-31
 ---
 
 # 图表
