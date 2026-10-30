@@ -1,3 +1,8 @@
+---
+template: deck
+theme: serif
+---
+
 # dbnomics
 
 **经济学,就是一条条普通的链接** —— 宏观知识页,底层是 DBnomics 的数据。
