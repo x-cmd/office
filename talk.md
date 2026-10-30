@@ -28,6 +28,16 @@ https://x-cmd.com/ppt?url=<markdown 链接>
 
 贴进 README,别人点开就能讲。
 
+--
+
+## 封面就是一个 SVG
+
+[![本 deck 的封面](https://po6.sh/ppt/cover.svg?url=https://raw.githubusercontent.com/x-cmd/office/main/talk.md)](https://po6.sh/ppt?url=https://raw.githubusercontent.com/x-cmd/office/main/talk.md)
+
+上面这张图**就是这份 deck 的封面** —— 服务端把封面那页排成了 SVG(矢量、可缩放)。
+
+点它 → 打开这份演示。
+
 ---
 
 # 二 · 原理
