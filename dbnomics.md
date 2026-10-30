@@ -1,9 +1,11 @@
 ---
-cover: auto
-title: dbnomics
-subtitle: 经济学,就是一条条普通的链接
-author: x-cmd
-date: 2026-10-31
+template: deck
+theme: serif
+cover:
+  title: dbnomics
+  subtitle: 经济学,就是一条条普通的链接
+  author: x-cmd
+  date: 2026-10-31
 ---
 
 # 数据在链接里,知识页也在链接里
