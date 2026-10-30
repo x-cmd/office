@@ -1,3 +1,8 @@
+---
+template: deck
+theme: league
+---
+
 # 五分钟
 
 五分钟,一份 markdown。
