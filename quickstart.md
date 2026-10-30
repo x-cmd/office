@@ -3,6 +3,8 @@ template: deck
 theme: league
 ---
 
+<!-- .slide: data-layout="title" -->
+
 # 五分钟
 
 五分钟,一份 markdown。
