@@ -1,6 +1,11 @@
 ---
 template: deck
 theme: night
+cover:
+  title: draw
+  subtitle: 把数据变成一张图
+  author: x-cmd
+  date: 2026-10-31
 ---
 
 <!-- .slide: data-layout="title" -->
