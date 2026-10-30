@@ -1,3 +1,8 @@
+---
+template: deck
+theme: night
+---
+
 # draw
 
 **把数据变成一张图** —— 数据在 URL 里,打开就是 SVG。
