@@ -47,8 +47,6 @@ https://x-cmd.com/draw?type=bar&labels=Jan,Feb&values=3,5&w=560&h=300
 
 # 每种图型都好看
 
-## 柱状图
-
 ```draw
 type=bar&t=xcmd&labels=Jan,Feb,Mar,Apr&values=12,19,14,23&w=560&h=300&title=月度活跃
 ```
@@ -121,8 +119,6 @@ type=bar&t=xcmd&labels=Jan,Feb&values=3,5&w=560&h=300
 
 ---
 
-# 收尾
-
-## 下一个图,从这里开始
+# 下一个图,从这里开始
 
 **https://x-cmd.com/draw**
