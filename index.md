@@ -6,27 +6,19 @@ author: x-cmd
 date: 2026-10-31
 ---
 
+<!-- .slide: data-layout="gallery" -->
+
 # 演示
 
-一份 markdown = 一场演讲。下面每一张封面都是真 deck 的封面,**点一下就开讲**。
+一份 markdown = 一场演讲。下面每一张都是真 deck 的封面,**点一下就开讲**。
 
-<a href="https://po6.sh/ppt?url=https://raw.githubusercontent.com/x-cmd/office/main/talk.md"><img src="https://po6.sh/ppt/cover.svg?url=https://raw.githubusercontent.com/x-cmd/office/main/talk.md" width="520" alt="把 markdown 变成一场演讲"></a>
-
---
-
-<a href="https://po6.sh/ppt?url=https://raw.githubusercontent.com/x-cmd/office/main/quickstart.md"><img src="https://po6.sh/ppt/cover.svg?url=https://raw.githubusercontent.com/x-cmd/office/main/quickstart.md" width="520" alt="五分钟:写 deck 的语法速查"></a>
-
---
-
-<a href="https://po6.sh/ppt?url=https://raw.githubusercontent.com/x-cmd/office/main/charts.md"><img src="https://po6.sh/ppt/cover.svg?url=https://raw.githubusercontent.com/x-cmd/office/main/charts.md" width="520" alt="封面图与内联图表的玩法"></a>
-
---
-
-<a href="https://po6.sh/ppt?url=https://raw.githubusercontent.com/x-cmd/office/main/draw.md"><img src="https://po6.sh/ppt/cover.svg?url=https://raw.githubusercontent.com/x-cmd/office/main/draw.md" width="520" alt="draw:把数据变成一张图"></a>
-
---
-
-<a href="https://po6.sh/ppt?url=https://raw.githubusercontent.com/x-cmd/office/main/dbnomics.md"><img src="https://po6.sh/ppt/cover.svg?url=https://raw.githubusercontent.com/x-cmd/office/main/dbnomics.md" width="520" alt="dbnomics:经济学,就是一条条链接"></a>
+<div class="ppt-gallery">
+<a href="https://po6.sh/ppt?url=https://raw.githubusercontent.com/x-cmd/office/main/talk.md"><img src="https://po6.sh/ppt/cover.svg?url=https://raw.githubusercontent.com/x-cmd/office/main/talk.md" alt="把 markdown 变成一场演讲"></a>
+<a href="https://po6.sh/ppt?url=https://raw.githubusercontent.com/x-cmd/office/main/quickstart.md"><img src="https://po6.sh/ppt/cover.svg?url=https://raw.githubusercontent.com/x-cmd/office/main/quickstart.md" alt="五分钟:写 deck 的语法速查"></a>
+<a href="https://po6.sh/ppt?url=https://raw.githubusercontent.com/x-cmd/office/main/charts.md"><img src="https://po6.sh/ppt/cover.svg?url=https://raw.githubusercontent.com/x-cmd/office/main/charts.md" alt="封面图与内联图表的玩法"></a>
+<a href="https://po6.sh/ppt?url=https://raw.githubusercontent.com/x-cmd/office/main/draw.md"><img src="https://po6.sh/ppt/cover.svg?url=https://raw.githubusercontent.com/x-cmd/office/main/draw.md" alt="draw:把数据变成一张图"></a>
+<a href="https://po6.sh/ppt?url=https://raw.githubusercontent.com/x-cmd/office/main/dbnomics.md"><img src="https://po6.sh/ppt/cover.svg?url=https://raw.githubusercontent.com/x-cmd/office/main/dbnomics.md" alt="dbnomics:经济学,就是一条条链接"></a>
+</div>
 
 ---
 
