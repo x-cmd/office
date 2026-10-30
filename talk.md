@@ -75,8 +75,6 @@ https://x-cmd.com/ppt?url=<markdown 链接>
 
 # 原理
 
-## 渲染在浏览器
-
 服务端只出 HTML 壳:
 
 1. 浏览器取 markdown(经同源代理)
@@ -109,8 +107,6 @@ https://x-cmd.com/ppt?url=<markdown 链接>
 ---
 
 # 封面图
-
-## SSR 只做一页
 
 reveal.js **没有**服务端渲染能力 —— 后台只把**指定的那一页**排成 SVG:
 
@@ -145,8 +141,6 @@ SVG 内嵌 **SMIL** 动画;不支持动画时,看到的就是**定格的那一�
 
 # 图表
 
-## markdown 里直接画图
-
 服务端把围栏展开成**内联 SVG** —— 矢量、可缩放,不是图片:
 
 ```draw
@@ -167,8 +161,6 @@ type=bar&t=xcmd&labels=Jan,Feb,Mar,Apr&values=12,19,14,23&w=560&h=300&title=月�
 
 # 版面模板
 
-## 三种版面,随你挑
-
 | 模板 | 版面 |
 |---|---|
 | `deck` | 经典左对齐,列表不挂圆点(默认) |
@@ -181,9 +173,7 @@ type=bar&t=xcmd&labels=Jan,Feb,Mar,Apr&values=12,19,14,23&w=560&h=300&title=月�
 
 ---
 
-# 收尾
-
-## 现在就去讲一场
+# 现在就去讲一场
 
 把地址贴出来,别人点开就能讲。
 
