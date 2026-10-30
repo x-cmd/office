@@ -1,3 +1,8 @@
+---
+template: center
+theme: black
+---
+
 # 图表
 
 封面图与内联图表的玩法。
