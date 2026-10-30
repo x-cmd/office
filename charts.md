@@ -6,8 +6,6 @@
 
 # 封面图
 
-## 一条链接,一张 SVG
-
 ```text
 https://x-cmd.com/ppt/cover.svg?url=<deck 的地址>
 ```
@@ -51,8 +49,6 @@ SVG 内嵌的是 **SMIL** 动画(HTML 标准在 `<img>` 上下文明确允许)�
 
 # 内联图表
 
-## 围栏里写参数
-
 服务端把围栏展开成**内联 SVG**,浏览器原生渲染 —— 矢量、可缩放,不是图片:
 
 ```draw
@@ -91,16 +87,12 @@ type=bar&labels=Jan,Feb,Mar&values=3,5,4&w=560&h=300
 
 # 三个案例
 
-## 现成的 deck
-
 - **本 deck** —— 图表与封面图的玩法
 - **五分钟** —— 写 deck 的语法速查
 - **draw** —— 把数据变成一张图
 
 ---
 
-# 收尾
-
-## 你的下一个 deck
+# 你的下一个 deck
 
 **https://x-cmd.com/ppt**
