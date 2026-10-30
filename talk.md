@@ -4,7 +4,7 @@
 
 长链接即入口 · 浏览器端 reveal.js 渲染
 
-> ← → 换主题 · ↑ ↓ 换主题内的页 · ESC 看全部幻灯片
+[![本项目各模块行数](https://x-cmd.com/draw?type=bar&labels=排版,取数,路由,页面,其它&values=615,272,263,327,431&w=560&h=300)](https://x-cmd.com/draw/explore?type=bar&labels=排版,取数,路由,页面,其它&values=615,272,263,327,431)
 
 ---
 
@@ -118,25 +118,41 @@ SVG 内嵌 **SMIL** 动画(HTML 标准在 `<img>` 上下文明确允许)。
 
 ## 围栏里写参数
 
+服务端展开成**内联 SVG**,浏览器原生渲染 —— 矢量、可缩放,不是图片:
+
+```draw
+type=bar&labels=Jan,Feb,Mar&values=3,5,4&w=560&h=300
+```
+
+写法就一句:
+
 ````markdown
 ```draw
 type=bar&labels=Jan,Feb,Mar&values=3,5,4&w=560&h=300
 ```
 ````
 
-服务端展开成**内联 SVG**,浏览器原生渲染 —— 矢量、可缩放,不是图片。
-
 --
 
 ## 或者直接贴 draw 的链接
 
-![各模块行数](https://x-cmd.com/draw?type=bar&labels=排版,取数,路由,页面&values=615,272,263,327&w=560&h=300)
+[![各模块行数](https://x-cmd.com/draw?type=bar&labels=排版,取数,路由,页面&values=615,272,263,327&w=560&h=300)](https://x-cmd.com/draw/explore?type=bar&labels=排版,取数,路由,页面&values=615,272,263,327)
 
 指向图表服务的图片,同样会被内联成原生 SVG。
+
+外面套一层链接 → **点图跳到别处**(这里是 draw 的 explore:悬停看数、改参数)。
 
 ---
 
 # 五 · 用法
+
+## 怎么翻
+
+- `← →` 换主题 · `↑ ↓` 换主题内的页
+- `ESC` 看全部幻灯片 · `S` 演讲者备注
+- `?print-pdf` 直接打印成 PDF
+
+--
 
 ## 三条链接
 
