@@ -3,6 +3,8 @@ template: deck
 theme: black
 ---
 
+<!-- .slide: data-layout="title" -->
+
 # 把 markdown 变成一场演讲
 
 **一个长链接就是入口** —— 贴进 README,别人点开就能讲。
@@ -177,6 +179,8 @@ type=bar&t=xcmd&labels=Jan,Feb,Mar,Apr&values=12,19,14,23&w=560&h=300&title=月�
 ```
 
 ---
+
+<!-- .slide: data-layout="end" -->
 
 # 现在就去讲一场
 
