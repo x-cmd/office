@@ -1,9 +1,11 @@
 ---
-cover: auto
-title: ppt
-subtitle: 把 markdown 变成一场演讲
-author: x-cmd
-date: 2026-10-31
+template: deck
+theme: black
+cover:
+  title: ppt
+  subtitle: 把 markdown 变成一场演讲
+  author: x-cmd
+  date: 2026-10-31
 ---
 
 <!-- .slide: data-layout="gallery" -->
