@@ -35,11 +35,11 @@ https://x-cmd.com/ppt?url=<markdown 链接>
 
 ## 封面就是一张 SVG
 
-<a href="https://po6.sh/ppt?url=https://raw.githubusercontent.com/x-cmd/office/main/talk.md"><img src="https://po6.sh/ppt/cover.svg?url=https://raw.githubusercontent.com/x-cmd/office/main/talk.md" width="400" alt="本 deck 的封面"></a>
+<a href="https://po6.sh/ppt?url=https://raw.githubusercontent.com/x-cmd/office/main/talk.md"><img src="https://po6.sh/ppt/cover.svg?url=https://raw.githubusercontent.com/x-cmd/office/main/talk.md" width="300" alt="本 deck 的封面"></a>
 
 服务端把封面那页排成 SVG —— 矢量、可缩放、能放进 README。
 
-点它 → 打开这份演示。(显示尺寸用 HTML 的 `width` 属性控制)
+点它 → 打开这份演示。尺寸用 HTML 的 `width` 属性控制。
 
 --
 
