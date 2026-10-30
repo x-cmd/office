@@ -22,7 +22,7 @@ date: 2026-10-31
 
 ## G20 全景
 
-[![G20 GDP](https://x-cmd.com/draw?type=hbar&t=xcmd&labels=USA%2CChina%2CGermany%2CJapan%2CIndia%2CUK%2CFrance%2CItaly%2CCanada%2CBrazil%2CRussia%2CKorea%2CAustralia%2CMexico%2CIndonesia%2CT%C3%BCrkiye%2CSaudi+A.%2CS.+Africa&values=30337.2%2C19534.9%2C4921.6%2C4389.3%2C4271.9%2C3730.3%2C3283.4%2C2459.6%2C2330.3%2C2307.2%2C2195.7%2C1947.1%2C1881.1%2C1817.8%2C1492.6%2C1455.4%2C1136.6%2C418.0&w=780&h=460&title=G20+%C2%B7+GDP+%E5%90%8D%E4%B9%89%E5%80%BC+2025&unit=USD+bn)](https://x-cmd.com/draw/explore?type=hbar&t=xcmd&labels=USA%2CChina%2CGermany%2CJapan%2CIndia%2CUK%2CFrance%2CItaly%2CCanada%2CBrazil%2CRussia%2CKorea%2CAustralia%2CMexico%2CIndonesia%2CT%C3%BCrkiye%2CSaudi+A.%2CS.+Africa&values=30337.2%2C19534.9%2C4921.6%2C4389.3%2C4271.9%2C3730.3%2C3283.4%2C2459.6%2C2330.3%2C2307.2%2C2195.7%2C1947.1%2C1881.1%2C1817.8%2C1492.6%2C1455.4%2C1136.6%2C418.0&w=780&h=460&title=G20+%C2%B7+GDP+%E5%90%8D%E4%B9%89%E5%80%BC+2025&unit=USD+bn)
+[![G20 GDP](https://x-cmd.com/draw?type=hbar&labels=USA%2CChina%2CGermany%2CJapan%2CIndia%2CUK%2CFrance%2CItaly%2CCanada%2CBrazil%2CRussia%2CKorea%2CAustralia%2CMexico%2CIndonesia%2CT%C3%BCrkiye%2CSaudi+A.%2CS.+Africa&values=30337.2%2C19534.9%2C4921.6%2C4389.3%2C4271.9%2C3730.3%2C3283.4%2C2459.6%2C2330.3%2C2307.2%2C2195.7%2C1947.1%2C1881.1%2C1817.8%2C1492.6%2C1455.4%2C1136.6%2C418.0&w=780&h=460&title=G20+%C2%B7+GDP+%E5%90%8D%E4%B9%89%E5%80%BC+2025&unit=USD+bn)](https://x-cmd.com/draw/explore?type=hbar&labels=USA%2CChina%2CGermany%2CJapan%2CIndia%2CUK%2CFrance%2CItaly%2CCanada%2CBrazil%2CRussia%2CKorea%2CAustralia%2CMexico%2CIndonesia%2CT%C3%BCrkiye%2CSaudi+A.%2CS.+Africa&values=30337.2%2C19534.9%2C4921.6%2C4389.3%2C4271.9%2C3730.3%2C3283.4%2C2459.6%2C2330.3%2C2307.2%2C2195.7%2C1947.1%2C1881.1%2C1817.8%2C1492.6%2C1455.4%2C1136.6%2C418.0&w=780&h=460&title=G20+%C2%B7+GDP+%E5%90%8D%E4%B9%89%E5%80%BC+2025&unit=USD+bn)
 
 --
 
@@ -42,7 +42,7 @@ date: 2026-10-31
 
 ## 政府债务
 
-[![政府债务](https://x-cmd.com/draw?type=hbar&t=xcmd&labels=Japan%2CGreece%2CItaly%2CUSA%2CFrance%2CUK%2CCanada%2CSpain%2CChina%2CBrazil%2CIndia%2CGermany%2CKorea%2CSaudi+A.&values=248.7%2C152.9%2C138.7%2C124.1%2C115.3%2C103.8%2C103.2%2C100.7%2C93.8%2C92.0%2C82.6%2C62.1%2C54.3%2C30.6&w=780&h=420&title=%E6%94%BF%E5%BA%9C%E6%80%BB%E5%80%BA%E5%8A%A1+%C2%B7+2025&unit=%25+GDP)](https://x-cmd.com/draw/explore?type=hbar&t=xcmd&labels=Japan%2CGreece%2CItaly%2CUSA%2CFrance%2CUK%2CCanada%2CSpain%2CChina%2CBrazil%2CIndia%2CGermany%2CKorea%2CSaudi+A.&values=248.7%2C152.9%2C138.7%2C124.1%2C115.3%2C103.8%2C103.2%2C100.7%2C93.8%2C92.0%2C82.6%2C62.1%2C54.3%2C30.6&w=780&h=420&title=%E6%94%BF%E5%BA%9C%E6%80%BB%E5%80%BA%E5%8A%A1+%C2%B7+2025&unit=%25+GDP)
+[![政府债务](https://x-cmd.com/draw?type=hbar&labels=Japan%2CGreece%2CItaly%2CUSA%2CFrance%2CUK%2CCanada%2CSpain%2CChina%2CBrazil%2CIndia%2CGermany%2CKorea%2CSaudi+A.&values=248.7%2C152.9%2C138.7%2C124.1%2C115.3%2C103.8%2C103.2%2C100.7%2C93.8%2C92.0%2C82.6%2C62.1%2C54.3%2C30.6&w=780&h=420&title=%E6%94%BF%E5%BA%9C%E6%80%BB%E5%80%BA%E5%8A%A1+%C2%B7+2025&unit=%25+GDP)](https://x-cmd.com/draw/explore?type=hbar&labels=Japan%2CGreece%2CItaly%2CUSA%2CFrance%2CUK%2CCanada%2CSpain%2CChina%2CBrazil%2CIndia%2CGermany%2CKorea%2CSaudi+A.&values=248.7%2C152.9%2C138.7%2C124.1%2C115.3%2C103.8%2C103.2%2C100.7%2C93.8%2C92.0%2C82.6%2C62.1%2C54.3%2C30.6&w=780&h=420&title=%E6%94%BF%E5%BA%9C%E6%80%BB%E5%80%BA%E5%8A%A1+%C2%B7+2025&unit=%25+GDP)
 
 --
 
