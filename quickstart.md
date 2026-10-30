@@ -1,6 +1,11 @@
 ---
 template: deck
 theme: league
+cover:
+  title: 五分钟
+  subtitle: 写一场演讲要多久
+  author: x-cmd
+  date: 2026-10-31
 ---
 
 <!-- .slide: data-layout="title" -->
