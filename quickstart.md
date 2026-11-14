@@ -1,141 +1,107 @@
 ---
 template: deck
-theme: league
+theme: black
 cover:
-  title: 五分钟
-  subtitle: 写一场演讲要多久
+  title: 五分钟,学会写 deck
+  subtitle: 因为 markdown 你已经会了
   author: x-cmd
-  date: 2026-11-14
+  date: 2026-11-15
 ---
 
-<!-- .slide: data-layout="title" -->
+<!-- .slide: data-layout="statement" -->
 
-# 五分钟
+# 你已经会写 deck 了
 
-一份 markdown,一场演讲。
-
-**你只需要记住三件事:`#` 是主题,`---` 翻页,剩下全是 markdown。**
-
----
-
-# 骨架
-
-<!-- .slide: data-layout="section" data-background-color="#1c2430" -->
-
-## 两级标题,两级页面
-
-```markdown
-# 一 · 原理          ← 主题(左右翻)
-
-## 开场              ← 主题内的一页(上下翻)
-
---
-                   ← 主题内换页
+**你会 markdown —— 剩下的新东西,五分钟讲完。**
 
 ---
 
-# 二 · 用法          ← 换主题
-```
+# 新东西只有三样
 
---
-
-## 头上的 frontmatter
-
-```yaml
----
-template: deck        # deck(默认)/ center / plain
-theme: black          # 14 款内置
-cover:                # 写了就生成一页标准封面
-  title: 我的演讲
-  subtitle: 一句话说明
-  author: 我
-  date: 2026-11-14
----
-```
-
-都有合理默认,只写要用的。
-
----
-
-# 排版就是 markdown
-
-| 写法 | 效果 |
-|---|---|
-| `**粗**` | **粗体** |
-| `*斜*` | *斜体* |
-| `` `代码` `` | 行内代码 |
-| `[文字](链接)` | 链接 |
-| `> 引用` | 引用块 |
-| `- 项` / `1. 项` | 列表 |
-
-表格、代码块、图片照常写 —— 渲染交给 reveal.js。
-
---
-
-## 图片
-
-```markdown
-![说明](https://example.com/a.png)
-```
-
-浏览器里正常显示;封面图(SVG)里画占位框 —— 配图建议用
-draw 链接或内联 SVG,两侧都是矢量。
-
----
-
-# 版式:一页一个性格
-
-每页开头放一条注释,版式就换:
-
-```markdown
 <!-- .slide: data-layout="section" data-background-color="#101722" -->
+
+## 分页 · 声明 · 备注
+
+- `---` —— 换一章(左右方向键)
+- `--` —— 章内换一页(上下方向键)
+- `Note:` —— 演讲者备注,按 `S` 只给自己看
+
+标题、列表、表格、代码、链接 —— 照常写,不用学。
+
+--
+
+## 骨架长这样
+
+```markdown
+# 一 · 开场        ← 一章
+
+## 破题            ← 章内一页
+
+--
+
+## 展开
+
+---
+
+# 二 · 收尾
 ```
+
+---
+
+# 头上的声明(frontmatter)
+
+写不写都行,写了更像"一份作品":
+
+| 键 | 作用 |
+|---|---|
+| `cover:` | 生成一页标准封面(title / subtitle / author / date) |
+| `theme:` | 配色,14 款内置(本页是 black) |
+| `template:` | `deck` 左对齐 / `center` 居中 / `plain` 原样 |
+| `palette:` | 微调 CSS 变量,浏览器与封面图同步 |
+
+---
+
+# 每页一个性格
+
+页首一条注释,版式就换:
 
 | 版式 | 用在 |
 |---|---|
-| `title` / `cover` | 开场 |
-| `section` | 章节分隔(配背景色) |
+| `section` | 章节分隔(配 `data-background-color` 换底色) |
 | `statement` | 一句话砸场 |
 | `quote` | 引用 |
 | `end` | 收尾 |
 | `gallery` | 封面卡片墙(见首页) |
 
---
+本页到上一页之间那些深色大页,就是 `section`。
 
-## 演讲者备注
+---
 
-```markdown
-## 这一页
+# 图表,一行参数
 
-正文。
+围栏语言写 `draw`:
 
-Note:
-只有你自己能看到的话,写在 S 键打开的备注窗口里。
+```draw
+type=bar&t=xcmd&labels=听懂,上手,讲完&values=100,95,5&w=680&h=340&title=五分钟的效果
 ```
 
-代码块里的 `---` / `--` / `Note:` 不会被当分页 —— 放心写示例。
+服务端展开成内联 SVG —— 矢量、可点,玩法见「图表」那份 deck。
 
 ---
 
 # 发布:贴出去就行
 
-deck 放在任何取得到 raw 的地方(git / gist / 静态托管):
+deck 放在任何取得到 raw 的地方,然后:
 
 ```text
 https://x-cmd.com/ppt?url=<deck 的地址>
 ```
 
-URL 参数可以盖过 deck 声明:`?theme=league`、`?template=center`。
-
---
-
-## 顺手做张封面
+想嵌 README,再加一行封面 —— 点图开讲:
 
 ```markdown
 [![封面](https://x-cmd.com/ppt/cover.svg?url=<deck 地址>)](https://x-cmd.com/ppt?url=<deck 地址>)
 ```
-
-嵌进 README —— 封面与第一页永远同源同款,点图开讲。
 
 ---
 
