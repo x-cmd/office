@@ -1,6 +1,6 @@
 ---
 template: deck
-theme: serif
+theme: black
 cover:
   title: datalink
   subtitle: 数据在链接里,不在截图里
