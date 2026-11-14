@@ -3,192 +3,139 @@ template: deck
 theme: black
 cover:
   title: 把 markdown 变成一场演讲
-  subtitle: 一个长链接就是入口
+  subtitle: 一个长链接,就是入口
   author: x-cmd
-  date: 2026-10-31
+  date: 2026-11-14
 ---
 
-<!-- .slide: data-layout="title" -->
+<!-- .slide: data-layout="statement" -->
 
-# 把 markdown 变成一场演讲
+# 一个链接,就是一场演讲
 
-**一个长链接就是入口** —— 贴进 README,别人点开就能讲。
-
-`https://x-cmd.com/ppt`
+**贴进 README,别人点开就能讲。**
 
 ---
 
-# markdown 早就写好了,演讲还没准备好
+# 旧剧本
 
-AI 十分钟写完一份 deck,然后呢?
+<!-- .slide: data-layout="section" data-background-color="#101722" -->
 
-- 装工具、导 PDF、改样式 —— 一遍遍重来
-- 分享出去的是**文件**,不是**内容**
+## AI 十分钟写完 deck,然后呢
+
+- 装工具、导 PDF、调样式 —— 每台机器重来一遍
+- 发出去的是**文件**:打不开、看不了、改不动
+- 三个月后,版本已经对不上了
 
 --
 
-## 换个问法
+> 分享出去的应该是**内容**,不是文件。
 
-> markdown 已经躺在仓库里 —— 能不能**只把它的地址贴出来**,别人点开就能讲?
-
-把渲染搬到**浏览器**,把输入缩成**一个地址**。
+markdown 早就躺在仓库里了 —— 缺的只是一个**入口**。
 
 ---
 
-# 一个链接,一场演讲
+# 新剧本:只贴地址
 
 ```text
-https://x-cmd.com/ppt?url=<markdown 链接>
+https://x-cmd.com/ppt?url=<markdown 的地址>
 ```
 
-贴进 README,别人点开就能讲。
+渲染搬到**浏览器**,输入缩成**一个地址**。
+
+内容不动、仓库不动、工具不用装。
 
 --
 
-## 封面就是一张 SVG
+## 内容直传也行
 
-<a href="https://po6.sh/ppt?url=https://raw.githubusercontent.com/x-cmd/office/main/talk.md"><img src="https://po6.sh/ppt/cover.svg?url=https://raw.githubusercontent.com/x-cmd/office/main/talk.md" width="300" alt="本 deck 的封面"></a>
-
-服务端把封面那页排成 SVG —— 矢量、可缩放、能放进 README。
-
-点它 → 打开这份演示。尺寸用 HTML 的 `width` 属性控制。
-
---
-
-## 三个现成的案例
-
-- **本 deck** —— 把 markdown 变成一场演讲
-- **五分钟** —— 写 deck 的语法速查
-- **图表** —— 封面图与内联图表的玩法
-
----
-
-# 它是一个 webapp,不是一个 action
-
-| | draw | ppt |
-|---|---|---|
-| 输入 | 数据(参数) | **链接** |
-| 输出 | 一张图 | **一场演讲** |
-| 渲染 | 服务端 | **浏览器** |
-
---
-
-## datalink:输入是地址
-
-内容通常**已经在仓库里**了 —— 用户只想贴它的地址。
-
-接口只认一样东西:
+不想找托管?全文塞进参数:
 
 ```text
-/ppt?url=<markdown 的地址>
+https://x-cmd.com/ppt?content=<URL 编码的 markdown>
 ```
 
----
-
-# 原理
-
-服务端只出 HTML 壳:
-
-1. 浏览器取 markdown(经同源代理)
-2. reveal.js 切页、渲染
-
-幻灯片是**活的** —— 主题、翻页、备注、打印 PDF,全是 reveal.js 原生能力。
-
---
-
-## 同源代理
-
-源站大多**不发 CORS 头**,浏览器直接取会被拦。
-
-服务端 fetch 不受同源策略约束 → 代取 → 以**同源**身份交给浏览器。
-
-后台成了出口,所以要守边界:
-
-- 只允许 `http/https`
-- 拒绝内网 / 回环 / 云元数据
-- 限体积、跳数、超时、频率
-
---
-
-## 取过一次就够了
-
-备注窗口(`S`)会再开一个接收端页面,它本会**再取一次** markdown。
-
-前端把取到的内容存进 `localStorage`(同源共享),之后一律用缓存 —— 不再回源。
+一两个屏幕的短 deck,一条链接走天下。
 
 ---
 
-# 封面图
+# 封面,也是一张链接
 
-reveal.js **没有**服务端渲染能力 —— 后台只把**指定的那一页**排成 SVG:
+[![本 deck 的封面](/ppt/cover.svg?url=https://raw.githubusercontent.com/x-cmd/office/main/talk.md)](?url=https://raw.githubusercontent.com/x-cmd/office/main/talk.md)
 
-- 画布 960×700
-- 字号 / 行高 / 间距 / 颜色 —— 取自主题 CSS
-- 行盒模型照抄浏览器
+服务端把指定那一页排成 **SVG** —— 矢量、可缩放,README 里 `width="420"` 控制大小。
 
-于是封面图与浏览器里那一页**看着一样**。
+点图 → 直接开讲。
 
 --
 
-## 测量与渲染同源
+## README 里的标准嵌法
 
-折行点要跟浏览器一致,量宽就得用**同一份字体**:
-
-- 内嵌字体子集进 SVG(`<img>` 引用时取不到外部字体)
-- 同一份字体的**字宽表**用于排版
-
-测量的字,就是渲染的字。
-
---
-
-## 也能是一段动画
-
-```text
-/ppt/cover.svg?url=…&anim=0,2,5&freeze=5
+```markdown
+[![](https://x-cmd.com/ppt/cover.svg?url=<deck 地址>)](https://x-cmd.com/ppt?url=<deck 地址>)
 ```
 
-SVG 内嵌 **SMIL** 动画;不支持动画时,看到的就是**定格的那一页**。
+封面永远与第一页**同源同款** —— deck 改了,封面跟着变。
 
 ---
 
-# 图表
+# 架构:浏览器直读
 
-服务端把围栏展开成**内联 SVG** —— 矢量、可缩放,不是图片:
+<!-- .slide: data-layout="section" data-background-color="#0f1a17" -->
 
-```draw
-type=bar&t=xcmd&labels=Jan,Feb,Mar,Apr&values=12,19,14,23&w=560&h=300&title=月度活跃
-```
+## 常见路径零服务端调用
+
+GitHub 的 raw 有 CORS 头 —— **浏览器直接取 markdown**,
+worker 只出一个页面壳。
+
+被 CORS 挡住才回落服务端代取:校验 Referer、限体积、限频率。
 
 --
 
-## 或者贴 draw 的链接
+## 服务端只做一件难事
 
-[![各模块行数](https://x-cmd.com/draw?type=bar&t=xcmd&labels=排版,取数,路由,页面&values=615,272,263,327&w=560&h=300)](https://x-cmd.com/draw/explore?type=bar&t=xcmd&labels=排版,取数,路由,页面&values=615,272,263,327)
+把**指定的那一页**排成 SVG:
 
-指向图表服务的图片,同样会被内联成原生 SVG。
+- 画布 960×700,字号/行高/颜色取自主题 CSS
+- 字体子集**内嵌**(`<img>` 里取不到外部字体)
+- 测量的字,就是渲染的字
 
-外面套一层链接 → **点图跳到别处**(这里是 draw 的 explore:悬停看数、改参数)。
+于是封面图和浏览器里那一页,看着一样。
 
 ---
 
-# 版面模板
+# 讲台上有什么
 
-| 模板 | 版面 |
+| 键 | 能做什么 |
 |---|---|
-| `deck` | 经典左对齐,列表不挂圆点(默认) |
-| `center` | 一切居中,列表不挂圆点 |
-| `plain` | reveal.js 原样 |
+| `← → ↑ ↓` | 换主题 / 换主题内的页 |
+| `S` | 演讲者备注(跨窗口同步) |
+| `W` | **标注**:画笔 / 荧光笔 / 划词高亮 |
+| `Z` / `Y` | 标注撤销 / 重做 |
+| `ESC` | 缩略图总览 |
 
-```text
-/ppt?url=<链接>&template=center
-```
+标注钉在**页**上,翻回来还在;观众屏只见内容,不见工具。
+
+--
+
+## 手机是另一套
+
+竖屏画布、上下滑翻页、二维小地图 —— 不是"缩小的桌面版",
+是照视频软件的用法重做的。
+
+---
+
+# 三份案例,点开就讲
+
+- **五分钟** —— 写 deck 的语法速查
+- **图表** —— draw 图表与真实数据
+- **datalink** —— 数据在链接里(理念篇)
+
+都在首页的 gallery 里,也都在你的收藏栏里。
 
 ---
 
 <!-- .slide: data-layout="end" -->
 
 # 现在就去讲一场
-
-把地址贴出来,别人点开就能讲。
 
 **https://x-cmd.com/ppt**
