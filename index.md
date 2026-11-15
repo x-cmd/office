@@ -8,11 +8,9 @@ cover:
   date: 2026-11-14
 ---
 
-<!-- .slide: data-layout="gallery" -->
+<!-- .slide: data-layout="gallery" data-columns="2" -->
 
-# 演示
-
-一份 markdown = 一场演讲。每一张都是真 deck 的封面,**点一下就开讲**。
+# 四份演示,点开就讲
 
 <div class="ppt-gallery">
 <a href="?url=https%3A%2F%2Fraw.githubusercontent.com%2Fx-cmd%2Foffice%2Fmain%2Ftalk.md"><img src="/ppt/cover.svg?url=https%3A%2F%2Fraw.githubusercontent.com%2Fx-cmd%2Foffice%2Fmain%2Ftalk.md" alt="把 markdown 变成一场演讲"></a>

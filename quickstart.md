@@ -18,7 +18,7 @@ cover:
 
 # 新东西只有三样
 
-<!-- .slide: data-layout="section" data-background-color="#101722" -->
+<!-- .slide: data-layout="section" data-background-color="#101726" -->
 
 ## 分页 · 声明 · 备注
 
@@ -100,7 +100,8 @@ https://x-cmd.com/ppt?url=<deck 的地址>
 想嵌 README,再加一行封面 —— 点图开讲:
 
 ```markdown
-[![封面](https://x-cmd.com/ppt/cover.svg?url=<deck 地址>)](https://x-cmd.com/ppt?url=<deck 地址>)
+[![封面](https://x-cmd.com/ppt/cover.svg?url=<deck 地址>)]
+(https://x-cmd.com/ppt?url=<deck 地址>)
 ```
 
 ---

@@ -20,7 +20,7 @@ markdown 里的一行参数,讲台上的一张矢量图。
 
 # 写法一:draw 围栏
 
-<!-- .slide: data-layout="section" data-background-color="#101a26" -->
+<!-- .slide: data-layout="section" data-background-color="#101726" -->
 
 ## 围栏语言标成 draw,内容就是图表参数
 
@@ -45,7 +45,7 @@ type=bar&t=xcmd&labels=一月,二月,三月,四月&values=12,19,14,23&w=720&h=38
 
 图片地址指向图表服务,同样会被内联:
 
-[![各模块行数](https://x-cmd.com/draw?type=hbar&t=xcmd&labels=排版,取数,路由,页面&values=615,272,263,327&w=720&h=360&title=ppt 各模块行数&unit=行)](https://x-cmd.com/draw/explore?type=hbar&t=xcmd&labels=排版,取数,路由,页面&values=615,272,263,327&w=720&h=360&title=ppt%20各模块行数&unit=行)
+[![各模块行数](https://x-cmd.com/draw?type=hbar&t=xcmd&labels=排版,取数,路由,页面&values=615,272,263,327&w=720&h=360&title=ppt%20各模块行数&unit=%E8%A1%8C)](https://x-cmd.com/draw/explore?type=hbar&t=xcmd&labels=排版,取数,路由,页面&values=615,272,263,327&w=720&h=360&title=ppt%20各模块行数&unit=%E8%A1%8C)
 
 **外面套一层链接,图就能点** —— 跳进 draw 的 explore,
 悬停看数、现场改参数。
@@ -118,7 +118,7 @@ type=bar&t=opendata&labels=一月,二月,三月,四月&values=12,19,14,23&w=720&
 
 # 真实数据:dbnomics
 
-<!-- .slide: data-layout="section" data-background-color="#161226" -->
+<!-- .slide: data-layout="section" data-background-color="#131024" -->
 
 ## 宏观数据,也是一条条链接
 
@@ -130,7 +130,7 @@ type=bar&t=opendata&labels=一月,二月,三月,四月&values=12,19,14,23&w=720&
 
 ## G20 · GDP 名义值(2025,USD bn)
 
-[![G20 GDP](https://x-cmd.com/draw?type=hbar&t=opendata&labels=USA,China,Germany,Japan,India,UK,France,Italy,Canada,Brazil,Russia,Korea,Australia,Mexico,Indonesia,T%C3%BCrkiye,Saudi+A.,S.+Africa&values=30337.2,19534.9,4921.6,4389.3,4271.9,3730.3,3283.4,2459.6,2330.3,2307.2,2195.7,1947.1,1881.1,1817.8,1492.6,1455.4,1136.6,418.0&w=780&h=440&title=G20+%C2%B7+GDP+2025&unit=USD+bn)](https://x-cmd.com/draw/explore?type=hbar&t=opendata&labels=USA,China,Germany,Japan,India,UK,France,Italy,Canada,Brazil,Russia,Korea,Australia,Mexico,Indonesia,T%C3%BCrkiye,Saudi+A.,S.+Africa&values=30337.2,19534.9,4921.6,4389.3,4271.9,3730.3,3283.4,2459.6,2330.3,2307.2,2195.7,1947.1,1881.1,1817.8,1492.6,1455.4,1136.6,418.0&w=780&h=440&title=G20%20%C2%B7%20GDP%202025&unit=USD%20bn)
+[![G20 GDP](https://x-cmd.com/draw?type=hbar&t=opendata&labels=USA,China,Germany,Japan,India,UK,France,Italy,Canada,Brazil,Russia,Korea&values=30337.2,19534.9,4921.6,4389.3,4271.9,3730.3,3283.4,2459.6,2330.3,2307.2,2195.7,1947.1&w=780&h=440&title=G20+%C2%B7+GDP+2025&unit=USD+bn)](https://x-cmd.com/draw/explore?type=hbar&t=opendata&labels=USA,China,Germany,Japan,India,UK,France,Italy,Canada,Brazil,Russia,Korea&values=30337.2,19534.9,4921.6,4389.3,4271.9,3730.3,3283.4,2459.6,2330.3,2307.2,2195.7,1947.1&w=780&h=440&title=G20%20%C2%B7%20GDP%202025&unit=USD%20bn)
 
 --
 

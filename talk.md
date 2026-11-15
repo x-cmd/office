@@ -18,7 +18,7 @@ cover:
 
 # 旧剧本
 
-<!-- .slide: data-layout="section" data-background-color="#101722" -->
+<!-- .slide: data-layout="section" data-background-color="#101726" -->
 
 ## AI 十分钟写完 deck,然后呢
 
@@ -40,9 +40,11 @@ markdown 早就躺在仓库里了 —— 缺的只是一个**入口**。
 https://x-cmd.com/ppt?url=<markdown 的地址>
 ```
 
-渲染搬到**浏览器**,输入缩成**一个地址**。
+渲染搬到**浏览器**,输入缩成一个地址:
 
-内容不动、仓库不动、工具不用装。
+- **内容不动**
+- **仓库不动**
+- **工具不用装**
 
 --
 
@@ -60,9 +62,9 @@ https://x-cmd.com/ppt?content=<URL 编码的 markdown>
 
 # 封面,也是一张链接
 
-[![本 deck 的封面](/ppt/cover.svg?url=https://raw.githubusercontent.com/x-cmd/office/main/talk.md)](?url=https://raw.githubusercontent.com/x-cmd/office/main/talk.md)
+<a href="?url=https://raw.githubusercontent.com/x-cmd/office/main/talk.md"><img src="/ppt/cover.svg?url=https://raw.githubusercontent.com/x-cmd/office/main/talk.md" width="380" alt="本 deck 的封面"></a>
 
-服务端把指定那一页排成 **SVG** —— 矢量、可缩放,README 里 `width="420"` 控制大小。
+服务端把指定那一页排成 **SVG** —— 矢量、可缩放,`width` 控制大小。
 
 点图 → 直接开讲。
 
@@ -80,7 +82,7 @@ https://x-cmd.com/ppt?content=<URL 编码的 markdown>
 
 # 架构:浏览器直读
 
-<!-- .slide: data-layout="section" data-background-color="#0f1a17" -->
+<!-- .slide: data-layout="section" data-background-color="#131024" -->
 
 ## 常见路径零服务端调用
 

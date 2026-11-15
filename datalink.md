@@ -18,7 +18,7 @@ cover:
 
 # 一个链接,两种读者
 
-<!-- .slide: data-layout="section" data-background-color="#1d1a14" -->
+<!-- .slide: data-layout="section" data-background-color="#101726" -->
 
 ## 人看渲染,agent 读结构
 
@@ -72,7 +72,7 @@ markdown 进,演讲出。渲染在浏览器,服务端只出壳;
 
 # 链接的另一面
 
-<!-- .slide: data-layout="section" data-background-color="#241418" -->
+<!-- .slide: data-layout="section" data-background-color="#131024" -->
 
 ## 一个 URL 会泄露什么
 
