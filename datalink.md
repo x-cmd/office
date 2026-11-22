@@ -5,10 +5,10 @@ cover:
   title: datalink
   subtitle: 数据在链接里,不在截图里
   author: datalink.ac
-  date: 2026-11-14
+  date: 2026-11-23
 ---
 
-<!-- .slide: data-layout="statement" -->
+<!-- .slide: data-layout="statement" data-background-gradient="radial-gradient(#241a3d 0%, #0e0a18 78%)" -->
 
 # 链接里装的是数据本身
 
@@ -16,9 +16,9 @@ cover:
 
 ---
 
-# 一个链接,两种读者
+<!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#1a2740 0%, #0b1120 75%)" -->
 
-<!-- .slide: data-layout="section" data-background-color="#101726" -->
+# 一个链接,两种读者
 
 ## 人看渲染,agent 读结构
 
@@ -46,6 +46,8 @@ https://datalink.ac/draw.json?type=bar&labels=Jan,Feb&values=3,5
 
 ---
 
+<!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#241a3d 0%, #0e0a18 75%)" -->
+
 # 一套理念,三件东西
 
 ## draw —— 图
@@ -70,28 +72,32 @@ markdown 进,演讲出。渲染在浏览器,服务端只出壳;
 
 ---
 
-# 链接的另一面
+<!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#1a2740 0%, #0b1120 75%)" -->
 
-<!-- .slide: data-layout="section" data-background-color="#131024" -->
+# 链接的另一面
 
 ## 一个 URL 会泄露什么
 
 把链接当公开物来对待 —— 它至少会出现在这六个地方:
 
-- 聊天与 issue 里的粘贴
-- 下一站的 `Referrer` 头
-- 浏览器跨设备同步
-- CDN 与代理的缓存
-- 截图与录屏
-- 错误追踪日志
+- 聊天与 issue 里的粘贴 <!-- .element: class="fragment" -->
+- 下一站的 `Referrer` 头 <!-- .element: class="fragment" -->
+- 浏览器跨设备同步 <!-- .element: class="fragment" -->
+- CDN 与代理的缓存 <!-- .element: class="fragment" -->
+- 截图与录屏 <!-- .element: class="fragment" -->
+- 错误追踪日志 <!-- .element: class="fragment" -->
 
 --
+
+<!-- .slide: data-layout="quote" data-background-color="#131024" -->
 
 > 把 URL 当 API,就要把 URL 当**公开物**。
 
 敏感的部分,放在链接之外。
 
 ---
+
+<!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#241a3d 0%, #0e0a18 75%)" -->
 
 # 为什么值得
 
@@ -103,7 +109,7 @@ markdown 进,演讲出。渲染在浏览器,服务端只出壳;
 
 ---
 
-<!-- .slide: data-layout="end" -->
+<!-- .slide: data-layout="end" data-background-gradient="radial-gradient(#241a3d 0%, #0e0a18 78%)" -->
 
 # 数据在链接里
 

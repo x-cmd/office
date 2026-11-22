@@ -5,7 +5,7 @@ cover:
   title: ppt
   subtitle: 把 markdown 变成一场演讲
   author: x-cmd
-  date: 2026-11-14
+  date: 2026-11-23
 ---
 
 <!-- .slide: data-layout="gallery" data-columns="2" -->
@@ -21,12 +21,14 @@ cover:
 
 ---
 
+<!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#1a2740 0%, #0b1120 75%)" -->
+
 # 这个项目在做什么
 
-- **输入**:一个 markdown 链接(`?url=`),或一段原文(`?content=`)
-- **输出**:一场 reveal.js 演讲,外加一页页的 SVG 封面图
-- **浏览器直读**:常见路径零 Worker 调用,CORS 才回落服务端代取
-- **图表内联**:` ```draw ` 围栏或 draw 链接,服务端展开成原生 SVG(可点)
+- **输入**:一个 markdown 链接(`?url=`),或一段原文(`?content=`) <!-- .element: class="fragment" -->
+- **输出**:一场 reveal.js 演讲,外加一页页的 SVG 封面图 <!-- .element: class="fragment" -->
+- **浏览器直读**:常见路径零 Worker 调用,CORS 才回落服务端代取 <!-- .element: class="fragment" -->
+- **图表内联**:` ```draw ` 围栏或 draw 链接,服务端展开成原生 SVG(可点) <!-- .element: class="fragment" -->
 
 ```text
 https://x-cmd.com/ppt?url=<markdown 链接>
@@ -34,6 +36,8 @@ https://x-cmd.com/ppt/cover.svg?url=<markdown 链接>
 ```
 
 ---
+
+<!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#241a3d 0%, #0e0a18 75%)" -->
 
 # 怎么开始写
 
@@ -43,7 +47,7 @@ cover:
   title: 我的演讲
   subtitle: 一句话说明
   author: 我
-  date: 2026-11-14
+  date: 2026-11-23
 ---
 
 # 第一页
@@ -51,4 +55,4 @@ cover:
 正文。
 ```
 
-`---` 横向分页 · `--` 纵向分页 · `Note:` 演讲者备注 · `<!-- .slide: data-layout="section" -->` 每页版式。
+`---` 横向分页 · `--` 纵向分页 · `Note:` 演讲者备注 · `<!-- .slide: data-layout="section" -->` 每页版式与底色。
