@@ -6,19 +6,37 @@ cover:
   subtitle: 一个长链接,就是入口
   author: x-cmd
   date: 2026-11-23
+  background: radial-gradient(#24406e 0%, #16233d 48%, #0b1120 100%)
 ---
 
-<!-- .slide: data-layout="statement" data-background-gradient="radial-gradient(#1c2a4a 0%, #0d1117 78%)" -->
+<!-- .slide: data-layout="statement" data-background-gradient="radial-gradient(#24406e 0%, #16233d 48%, #0b1120 100%)" -->
 
 # 一个链接,就是一场演讲
 
 **贴进 README,别人点开就能讲。**
 
+<svg viewBox="0 0 900 70" width="700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4f8cff"/>
+      <stop offset="0.5" stop-color="#7b6bff"/>
+      <stop offset="1" stop-color="#b06bff"/>
+    </linearGradient>
+  </defs>
+  <rect x="330" y="28" width="240" height="5" rx="2.5" fill="url(#hl)"/>
+  <circle cx="300" cy="30.5" r="4" fill="#4f8cff"/>
+  <circle cx="600" cy="30.5" r="4" fill="#b06bff"/>
+</svg>
+
 ---
 
-<!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#1a2740 0%, #0b1120 75%)" -->
+<!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#1c3050 0%, #122036 55%, #0b1120 100%)" -->
 
 # 旧剧本
+
+<svg viewBox="0 0 900 150" width="760" xmlns="http://www.w3.org/2000/svg">
+  <text x="800" y="130" text-anchor="middle" font-size="140" font-weight="700" fill="#7c9dff" opacity="0.13" font-family="ui-sans-serif">01</text>
+</svg>
 
 ## AI 十分钟写完 deck,然后呢
 
@@ -28,7 +46,7 @@ cover:
 
 --
 
-<!-- .slide: data-layout="quote" data-background-color="#101726" -->
+<!-- .slide: data-layout="quote" data-background-gradient="radial-gradient(#2a1f4d 0%, #181130 55%, #0e0a18 100%)" -->
 
 > 分享出去的应该是**内容**,不是文件。
 
@@ -36,9 +54,13 @@ markdown 早就躺在仓库里了 —— 缺的只是一个**入口**。
 
 ---
 
-<!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#1a2740 0%, #0b1120 75%)" -->
+<!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#1c3050 0%, #122036 55%, #0b1120 100%)" -->
 
 # 新剧本:只贴地址
+
+<svg viewBox="0 0 900 150" width="760" xmlns="http://www.w3.org/2000/svg">
+  <text x="800" y="130" text-anchor="middle" font-size="140" font-weight="700" fill="#7c9dff" opacity="0.13" font-family="ui-sans-serif">02</text>
+</svg>
 
 ```text
 https://x-cmd.com/ppt?url=<markdown 的地址>
@@ -64,9 +86,13 @@ https://x-cmd.com/ppt?content=<URL 编码的 markdown>
 
 ---
 
-<!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#241a3d 0%, #0e0a18 75%)" -->
+<!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#2a1f4d 0%, #181130 55%, #0e0a18 100%)" -->
 
 # 封面,也是一张链接
+
+<svg viewBox="0 0 900 150" width="760" xmlns="http://www.w3.org/2000/svg">
+  <text x="800" y="130" text-anchor="middle" font-size="140" font-weight="700" fill="#b48cff" opacity="0.15" font-family="ui-sans-serif">03</text>
+</svg>
 
 <a href="?url=https://raw.githubusercontent.com/x-cmd/office/main/talk.md"><img src="/ppt/cover.svg?url=https://raw.githubusercontent.com/x-cmd/office/main/talk.md" width="380" alt="本 deck 的封面"></a>
 
@@ -86,9 +112,13 @@ https://x-cmd.com/ppt?content=<URL 编码的 markdown>
 
 ---
 
-<!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#1a2740 0%, #0b1120 75%)" -->
+<!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#1c3050 0%, #122036 55%, #0b1120 100%)" -->
 
 # 架构:浏览器直读
+
+<svg viewBox="0 0 900 150" width="760" xmlns="http://www.w3.org/2000/svg">
+  <text x="800" y="130" text-anchor="middle" font-size="140" font-weight="700" fill="#7c9dff" opacity="0.13" font-family="ui-sans-serif">04</text>
+</svg>
 
 ## 常见路径零服务端调用
 
@@ -128,9 +158,13 @@ https://x-cmd.com/ppt?content=<URL 编码的 markdown>
 
 ---
 
-<!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#241a3d 0%, #0e0a18 75%)" -->
+<!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#2a1f4d 0%, #181130 55%, #0e0a18 100%)" -->
 
 # 讲台上有什么
+
+<svg viewBox="0 0 900 150" width="760" xmlns="http://www.w3.org/2000/svg">
+  <text x="800" y="130" text-anchor="middle" font-size="140" font-weight="700" fill="#b48cff" opacity="0.15" font-family="ui-sans-serif">05</text>
+</svg>
 
 | 键 | 能做什么 |
 |---|---|
@@ -151,7 +185,7 @@ https://x-cmd.com/ppt?content=<URL 编码的 markdown>
 
 ---
 
-<!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#1a2740 0%, #0b1120 75%)" -->
+<!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#1c3050 0%, #122036 55%, #0b1120 100%)" -->
 
 # 三份案例,点开就讲
 
@@ -163,7 +197,7 @@ https://x-cmd.com/ppt?content=<URL 编码的 markdown>
 
 ---
 
-<!-- .slide: data-layout="end" data-background-gradient="radial-gradient(#1c2a4a 0%, #0d1117 78%)" -->
+<!-- .slide: data-layout="end" data-background-gradient="radial-gradient(#24406e 0%, #16233d 48%, #0b1120 100%)" -->
 
 # 现在就去讲一场
 

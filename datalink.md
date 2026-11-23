@@ -6,6 +6,7 @@ cover:
   subtitle: 数据在链接里,不在截图里
   author: datalink.ac
   date: 2026-11-23
+  background: radial-gradient(#1f3a5e 0%, #14273e 55%, #0b1420 100%)
 ---
 
 <!-- .slide: data-layout="statement" data-background-gradient="radial-gradient(#241a3d 0%, #0e0a18 78%)" -->

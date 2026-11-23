@@ -6,6 +6,7 @@ cover:
   subtitle: 把数据搬上讲台
   author: x-cmd
   date: 2026-11-23
+  background: radial-gradient(#33245c 0%, #1d1436 55%, #0e0a18 100%)
 ---
 
 <!-- .slide: data-layout="title" data-background-gradient="radial-gradient(#1c2a4a 0%, #0d1117 78%)" -->

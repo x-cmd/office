@@ -6,6 +6,7 @@ cover:
   subtitle: 把 markdown 变成一场演讲
   author: x-cmd
   date: 2026-11-23
+  background: radial-gradient(#1c3050 0%, #122036 55%, #0b1120 100%)
 ---
 
 <!-- .slide: data-layout="gallery" data-columns="2" -->

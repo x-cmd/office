@@ -6,6 +6,7 @@ cover:
   subtitle: 因为 markdown 你已经会了
   author: x-cmd
   date: 2026-11-23
+  background: radial-gradient(#485364 0%, #333a45 55%, #23262c 100%)
 ---
 
 <!-- .slide: data-layout="statement" data-background-gradient="radial-gradient(#414958 0%, #202329 78%)" -->
