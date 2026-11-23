@@ -18,6 +18,9 @@ cover:
 <a href="?url=https%3A%2F%2Fraw.githubusercontent.com%2Fx-cmd%2Foffice%2Fmain%2Fquickstart.md"><img src="/ppt/cover.svg?url=https%3A%2F%2Fraw.githubusercontent.com%2Fx-cmd%2Foffice%2Fmain%2Fquickstart.md" alt="五分钟:写 deck 的语法速查"></a>
 <a href="?url=https%3A%2F%2Fraw.githubusercontent.com%2Fx-cmd%2Foffice%2Fmain%2Fcharts.md"><img src="/ppt/cover.svg?url=https%3A%2F%2Fraw.githubusercontent.com%2Fx-cmd%2Foffice%2Fmain%2Fcharts.md" alt="图表:把数据搬上讲台"></a>
 <a href="?url=https%3A%2F%2Fraw.githubusercontent.com%2Fx-cmd%2Foffice%2Fmain%2Fdatalink.md"><img src="/ppt/cover.svg?url=https%3A%2F%2Fraw.githubusercontent.com%2Fx-cmd%2Foffice%2Fmain%2Fdatalink.md" alt="datalink:数据在链接里"></a>
+<a href="?url=https%3A%2F%2Fraw.githubusercontent.com%2Fx-cmd%2Foffice%2Fmain%2Finsight.md"><img src="/ppt/cover.svg?url=https%3A%2F%2Fraw.githubusercontent.com%2Fx-cmd%2Foffice%2Fmain%2Finsight.md" alt="一屏一图:把数字讲成故事"></a>
+<a href="?url=https%3A%2F%2Fraw.githubusercontent.com%2Fx-cmd%2Foffice%2Fmain%2Fsystem.md"><img src="/ppt/cover.svg?url=https%3A%2F%2Fraw.githubusercontent.com%2Fx-cmd%2Foffice%2Fmain%2Fsystem.md" alt="一个请求的一生:架构与流程"></a>
+<a href="?url=https%3A%2F%2Fraw.githubusercontent.com%2Fx-cmd%2Foffice%2Fmain%2Fship.md"><img src="/ppt/cover.svg?url=https%3A%2F%2Fraw.githubusercontent.com%2Fx-cmd%2Foffice%2Fmain%2Fship.md" alt="从想法到上线:交付流程图"></a>
 </div>
 
 ---
