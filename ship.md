@@ -20,7 +20,7 @@ cover:
 
 --
 
-```draw
+```draw/timeline
 title=x-cmd/ppt 大事记&section=2026-09&event=2026-09|第一版|markdown 变演讲&section=2026-10&event=2026-10|issue 源|deck 住进 issue&section=2026-11&event=2026-11|预览图系统|五种海报样式&w=900&h=420
 ```
 
@@ -32,7 +32,7 @@ title=x-cmd/ppt 大事记&section=2026-09&event=2026-09|第一版|markdown 变�
 
 进行中的只有一件:预览图样式系统
 
-```draw
+```draw/kanban
 title=v0.9 迭代看板&column=待办&column=进行中&column=已完成&task=待办|暗色主题打磨|&task=待办|手机小地图|&task=进行中|预览图样式系统|&task=已完成|issue 源|&task=已完成|draw 图表展开|&task=已完成|转场调柔|&w=620&h=400
 ```
 
@@ -44,7 +44,7 @@ title=v0.9 迭代看板&column=待办&column=进行中&column=已完成&task=待
 
 --
 
-```draw
+```draw/gitgraph
 title=发布分支&branch=main&branch=develop&commit=one|main|v0.8 发布|&commit=two|develop|draw 图族|one&commit=three|develop|预览图|two&commit=four|main|v0.9|two&w=860&h=360
 ```
 
@@ -56,7 +56,7 @@ title=发布分支&branch=main&branch=develop&commit=one|main|v0.8 发布|&commi
 
 从点链接到举手,分数是心情(5 = 最好)
 
-```draw
+```draw/journey
 title=从链接到掌声&section=打开&task=打开|点链接|5|观众&task=打开|扫一眼大纲|4|观众&section=放映&task=放映|跟着翻页|5|观众&task=放映|举手提问|3|观众&w=640&h=400
 ```
 
