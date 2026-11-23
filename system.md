@@ -5,6 +5,8 @@ cover:
   subtitle: ppt 的架构 · 结构图速览
   author: x-cmd
   date: 2026-11-23
+  tag: x-cmd · system
+  qr: https://github.com/x-cmd/office/blob/main/system.md
   background: aurora-blue
 ---
 

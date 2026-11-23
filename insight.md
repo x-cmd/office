@@ -5,6 +5,8 @@ cover:
   subtitle: 把数字讲成故事 · draw 数据图全家桶
   author: x-cmd
   date: 2026-11-23
+  tag: x-cmd · insight
+  qr: https://github.com/x-cmd/office/blob/main/insight.md
   background: aurora-ocean
 ---
 

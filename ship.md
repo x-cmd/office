@@ -5,6 +5,8 @@ cover:
   subtitle: 交付流程一张图 · 时间轴/看板/分支/旅程
   author: x-cmd
   date: 2026-11-23
+  tag: x-cmd · ship
+  qr: https://github.com/x-cmd/office/blob/main/ship.md
   background: aurora-forest
 ---
 
