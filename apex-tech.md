@@ -123,7 +123,14 @@ style: |
 
   /* ── 规格表:表头宽字距,行线青色减淡 ─────────────────────── */
   .reveal .slides section[data-layout="tc-spec"] h1 { font-size: 34px; margin: 0 0 .8em; }
-  .reveal .slides section[data-layout="tc-spec"] table { width: 100%; font-size: 19px; }
+  /* 表:margin 必须清零 —— reveal 的主题给 table 写了 margin:auto,
+     在 flex 容器里 auto 外边距会把剩余空间全吃掉(上下各分一半),
+     标题被顶到页框外面去。 */
+  .reveal .slides section[data-layout="tc-spec"] table {
+    width: 100%;
+    font-size: 19px;
+    margin: 0;
+  }
   .reveal .slides section[data-layout="tc-spec"] th {
     font-family: var(--ppt-tech-font);
     font-weight: 500;
