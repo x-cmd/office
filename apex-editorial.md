@@ -78,11 +78,18 @@ style: |
     text-transform: uppercase;
     color: #8a8172;
   }
-  /* 页码(红色角标) */
-  .reveal .slides section[data-layout^="ed-"] .folio {
+  /* 页码(红色角标)。
+     markdown 里孤零零的一个 span 会被 marked 包一层 <p> —— 绝对定位得认那层 p,
+     而且 p 要自己绝对定位:否则 span 的 right:8% 是相对 p 的宽度算的
+     (p 是收缩宽度,页码就贴到眉题后面去了)。 */
+  .reveal .slides section[data-layout^="ed-"] p:has(> .folio) {
     position: absolute;
     top: 7%;
     right: 8%;
+    left: auto;
+    margin: 0;
+  }
+  .reveal .slides section[data-layout^="ed-"] .folio {
     font-family: 'PptFraunces', serif;
     font-size: 15px;
     color: #c8361b;
@@ -370,6 +377,7 @@ style: |
 <!-- .slide: data-layout="ed-article" -->
 
 <span class="folio">07</span>
+
 <span class="kicker">Editorial · 本刊特稿</span>
 
 # 文件的死法
@@ -398,6 +406,7 @@ style: |
 <!-- .slide: data-layout="ed-index" -->
 
 <span class="folio">09</span>
+
 <span class="kicker">Index · 本期目录</span>
 
 # 七个页面,一个观点
@@ -424,6 +433,7 @@ style: |
 <!-- .slide: data-layout="ed-figure" -->
 
 <span class="folio">19</span>
+
 <span class="kicker">Figure · 一张图</span>
 
 # 打开就讲

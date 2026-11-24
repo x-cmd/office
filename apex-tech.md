@@ -67,7 +67,10 @@ style: |
       linear-gradient(to top, #6fc3ff 0 14px, transparent 14px) bottom right / 2px 14px;
     background-repeat: no-repeat;
   }
-  /* 图签行:每页顶部一行等宽小字(DOC 号 / REV / 比例) */
+  /* 图签行:每页顶部一行等宽小字(DOC 号 / REV / 比例)。
+     markdown 里它是一个 span,marked 会包一层 <p> —— 那层 p 得零边距,
+     否则会在版心里占出空当(整页 flex 居中会被顶偏)。 */
+  .reveal .slides section[data-layout^="tc-"] p:has(> .sheet-head) { margin: 0; }
   .reveal .slides section[data-layout^="tc-"] .sheet-head {
     position: absolute;
     top: 5.5%;
@@ -90,24 +93,6 @@ style: |
     -webkit-text-stroke: 0;
   }
   .reveal .slides section[data-layout^="tc-"] h1 b { font-weight: 700; color: #6fc3ff; }
-  /* 左缘的青色标注尺:每页一根,像图纸的索引线 */
-  .reveal .slides section[data-layout^="tc-"] .ruler {
-    position: absolute;
-    top: 18%;
-    bottom: 18%;
-    left: 8%;
-    width: 1px;
-    background: linear-gradient(180deg, transparent, rgba(111, 195, 255, .45) 12%, rgba(111, 195, 255, .45) 88%, transparent);
-  }
-  .reveal .slides section[data-layout^="tc-"] .ruler::before {
-    content: '';
-    position: absolute;
-    top: 0; left: -3px;
-    width: 7px; height: 7px;
-    border-radius: 50%;
-    background: #6fc3ff;
-    box-shadow: 0 0 8px 1px rgba(111, 195, 255, .6);
-  }
 
   /* ── 封面:标题块 + REV 戳 ──────────────────────────────── */
   .reveal .slides section[data-layout="tc-title"] h1 {

@@ -90,6 +90,9 @@ style: |
     letter-spacing: .22em;
     color: #6b7180;
   }
+  /* 图注:markdown 里是一个 span,marked 会包一层 <p> —— 那层 p 得零边距,
+     否则会在版心里占出空当(整页 flex 居中会被顶偏)。 */
+  .reveal .slides section[data-layout^="ad-"] p:has(> .figcap) { margin: 0; }
   .reveal .slides section[data-layout^="ad-"] .figcap {
     font-family: var(--ppt-tech-font);
     font-size: 11px;
