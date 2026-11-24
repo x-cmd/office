@@ -177,21 +177,29 @@ style: |
     color: #c8361b;
   }
 
-  /* ── 引语页:红色大引号 + 衬线大句 ────────────────────────── */
+  /* ── 引语页:红色大引号 + 衬线大句 ──────────────────────────
+     引号是"图"不是"字":脱流绝对定位,免得引号那行只占半行高、
+     底下留一段空白,引文被推得更远。 */
+  .reveal .slides section[data-layout="ed-quote"] p:has(> .qmark) {
+    position: absolute;
+    top: 15%;
+    left: 8%;
+    margin: 0;
+  }
   .reveal .slides section[data-layout="ed-quote"] .qmark {
-    font-family: 'PptFraunces', serif;
-    font-size: 168px;
-    line-height: .78;
-    color: #c8361b;
     display: block;
-    margin: 0 0 -.12em -.07em;
+    font-family: 'PptFraunces', serif;
+    font-size: 150px;
+    line-height: 1;
+    color: #c8361b;
+    margin: 0 0 0 -.08em;
   }
   .reveal .slides section[data-layout="ed-quote"] h1 {
     font-size: 62px;
     line-height: 1.5;
     max-width: 15em;
     font-weight: 700;
-    margin: .1em 0 0;
+    margin: 0;
   }
   .reveal .slides section[data-layout="ed-quote"] .attr {
     margin-top: 2.4em;
