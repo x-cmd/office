@@ -1,19 +1,22 @@
 ---
 theme: black
 transition: fade
+# 配色走 palette(不是 style):palette 是**浏览器与 SVG 两侧同源**的 ——
+# 服务端出封面图时看不见 style: 里的 CSS,只看得到 palette。图纸底与青线
+# 放这里,封面图才是图纸。
+palette: |
+  --r-background: #060b14;
+  --r-background-color: #0a1524;
+  --r-main-color: #d7e6ff;
+  --r-heading-color: #eaf3ff;
+  --r-link-color: #6fc3ff;
+  --r-heading-gradient: linear-gradient(90deg, #eaf3ff 0%, #eaf3ff 100%);
 style: |
   /* ── DECK AS CODE · 蓝图工程风 ─────────────────────────────
      深海军蓝图纸底 + 青色注记线 + 等宽标注。每个元素都有"图号":
      角标、刻度、REV 戳 —— 信息图(infographic)的语言,不是幻灯片。 */
 
   :root {
-    --r-background: #060b14;
-    --r-background-color: #0a1524;
-    --r-main-color: #d7e6ff;
-    --r-heading-color: #eaf3ff;
-    --r-heading-gradient: linear-gradient(90deg, #eaf3ff 0%, #eaf3ff 100%);
-    --r-link-color: #6fc3ff;
-
     /* 海报工具箱:装饰用青,几何细线 */
     --ppt-decor-accent: 111, 195, 255;
     --ppt-decor-ink: 111, 195, 255;

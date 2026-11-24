@@ -1,6 +1,16 @@
 ---
 theme: black
 transition: fade
+# 配色走 palette(不是 style):palette 是**浏览器与 SVG 两侧同源**的 ——
+# 服务端出封面图时看不见 style: 里的 CSS,只看得到 palette。颜色放这里,
+# 讲台上的那一页与 issue 里嵌的封面图才是同一个颜色。
+palette: |
+  --r-background: #030306;
+  --r-background-color: #050507;
+  --r-main-color: #e9ebf1;
+  --r-heading-color: #ffffff;
+  --r-link-color: #8ea6ff;
+  --r-heading-gradient: linear-gradient(100deg, #6e8bff 0%, #9a7bff 52%, #c06bff 100%);
 style: |
   /* ── 增长账本 · 发布会数字风 ────────────────────────────────
      近黑底 / 白字 / 唯一渐变只给数字。字阶对比拉满:300px 的巨号数字
@@ -13,13 +23,6 @@ style: |
      图里的颜色跟着 deck 走(draw 的 --d-* 变量被模板桥接过)。 */
 
   :root {
-    --r-background: #030306;
-    --r-background-color: #050507;
-    --r-main-color: #e9ebf1;
-    --r-heading-color: #ffffff;
-    --r-link-color: #8ea6ff;
-    --r-heading-gradient: linear-gradient(100deg, #6e8bff 0%, #9a7bff 52%, #c06bff 100%);
-
     /* 海报工具箱:装饰的强调色 = deck 的蓝紫 */
     --ppt-decor-accent: 110, 139, 255;
     --ppt-decor-ink: 157, 180, 232;

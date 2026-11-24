@@ -1,6 +1,16 @@
 ---
 theme: black
 transition: fade
+# 配色走 palette(不是 style):palette 是**浏览器与 SVG 两侧同源**的 ——
+# 服务端出封面图时看不见 style: 里的 CSS,只看得到 palette。纸面与油墨
+# 放这里,封面图才是纸的;放进 style: 就只有讲台上是纸的。
+palette: |
+  --r-background: #ece7db;
+  --r-background-color: #f3eee4;
+  --r-main-color: #1b1712;
+  --r-heading-color: #1b1712;
+  --r-link-color: #c8361b;
+  --r-heading-gradient: linear-gradient(90deg, #1b1712 0%, #1b1712 100%);
 style: |
   /* ── 演示的尽头是链接 · 杂志编辑风 ─────────────────────────
      纸面 #f2ede3 / 油墨 #1b1712 / 国际红 #c8361b 只给签名处。
@@ -8,13 +18,8 @@ style: |
      导语首字下沉、目录点线 —— 全是报刊排版语言。 */
 
   :root {
-    --r-background: #ece7db;
-    --r-background-color: #f3eee4;
-    --r-main-color: #1b1712;
-    --r-heading-color: #1b1712;
+    /* 中文标题用宋体(拉丁与数字另走 Fraunces) */
     --r-heading-font: 'Songti SC', 'Noto Serif SC', 'SimSun', serif;
-    --r-heading-gradient: linear-gradient(90deg, #1b1712 0%, #1b1712 100%);
-    --r-link-color: #c8361b;
 
     /* 海报工具箱:装饰改用油墨色,强调色是国际红 */
     --ppt-decor-accent: 200, 54, 27;
