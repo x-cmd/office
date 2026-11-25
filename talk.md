@@ -9,7 +9,7 @@ transition: fade
 
 # 把 markdown<br>变成一场演讲
 
-<span class="dek">一个长链接,就是入口。贴进 README,别人点开就能讲 —— 不装工具、不导 PDF、不发附件。</span>
+<span class="dek">一个长链接,就是入口。贴进 README,别人点开就能讲 —— 不用装工具,不用导 PDF,更不用发附件。</span>
 
 <span class="byline">文 / X-CMD 研究室 · 2026 年 11 月</span>
 
@@ -27,10 +27,16 @@ transition: fade
 
 <p class="body">发出去的是<strong>文件</strong>,收到的人看到的却是<strong>过去某一帧的你</strong>。</p>
 
+<ul class="body">
+  <li>装工具、导 PDF、调样式 —— 每台机器重来一遍</li>
+  <li>发出去的是文件:打不开、看不了、改不动</li>
+  <li>三个月后,版本已经对不上了</li>
+</ul>
+
 <div class="aside">
   <b>Sidebar</b>
-  装工具、导 PDF、调样式 —— 每台机器重来一遍。<br>
-  三个月后,版本已经对不上了。
+  一份 PPT 的平均寿命:从写完到被转发,大约 11 天。<br>
+  一份链接的寿命:只要它还能打开。
 </div>
 
 --
@@ -44,7 +50,7 @@ transition: fade
 # 三步,变成三箱附件
 
 ```draw/seq
-n=ai;be;AI 十分钟写完 deck;;r0c0&n=tool;ext;装工具 / 导 PDF;;r0c1&n=mail;be;发附件;;r0c2&e=ai;tool;每台机器重来一遍&e=tool;mail;对方打不开&e=mail;ai;版本对不上&title=旧剧本&w=840
+n=ai;be;AI 十分钟写完 deck;;r0c0&n=tool;ext;装工具 / 导 PDF;;r0c1&n=mail;be;发附件;;r0c2&e=ai;tool;每台机器重来一遍&e=tool;mail;对方打不开&e=mail;ai;版本对不上&w=840
 ```
 
 <span class="figcap"><b>FIG.1</b> —— 从"写完"到"发出去"要跨过的三道工序。每一道都在文件上,不在内容上。</span>
@@ -75,6 +81,14 @@ n=ai;be;AI 十分钟写完 deck;;r0c0&n=tool;ext;装工具 / 导 PDF;;r0c1&n=mai
 
 <p class="body">内容不动,仓库不动,工具不用装。</p>
 
+<ul class="body">
+  <li><strong>仓库文件</strong> —— 整个 markdown 就是 deck</li>
+  <li><strong>issue / PR / release</strong> —— 扫正文与评论里的 <code>x-cmd/ppt</code> 围栏块</li>
+  <li><strong>URL 直传</strong> —— <code>?content=</code> 一段原文,应急两页</li>
+</ul>
+
+<pre class="body"><code>https://x-cmd.com/ppt?url=&lt;markdown 的地址&gt;</code></pre>
+
 <div class="aside">
   <b>Sidebar</b>
   不想找托管?全文塞进参数也行:<br>
@@ -93,7 +107,7 @@ n=ai;be;AI 十分钟写完 deck;;r0c0&n=tool;ext;装工具 / 导 PDF;;r0c1&n=mai
 # 浏览器直读,常见路径零服务端调用
 
 ```draw/seq
-n=b;fe;浏览器(讲台);;r0c0&n=gh;ext;markdown 源站;;r0c1&n=w;be;ppt Worker;;r0c2&e=b;gh;fetch 直读&e=b;w;被 CORS 挡住才回落&title=取源的两条路&w=840
+n=b;fe;浏览器(讲台);;r0c0&n=gh;ext;markdown 源站;;r0c1&n=w;be;ppt Worker;;r0c2&e=b;gh;fetch 直读&e=b;w;被 CORS 挡住才回落&w=840
 ```
 
 <span class="figcap"><b>FIG.2</b> —— 源站自带 CORS 头,浏览器直读零调用;CORS 被挡才回落服务端代取(校验 Referer、限体积、限频率)。</span>
@@ -109,9 +123,9 @@ n=b;fe;浏览器(讲台);;r0c0&n=gh;ext;markdown 源站;;r0c1&n=w;be;ppt Worker;
 # 三件事,各占一页
 
 <span class="cols">
-  <span class="col"><b>一 · 二维分页</b><code>---</code> 横向分页是换主题,<code>--</code> 纵向分页是同一主题的下一页。系列的首屏是钩子,后面才是详情。</span>
-  <span class="col"><b>二 · 图表内联</b><code>draw</code> 围栏在服务端被换成<strong>内联 SVG</strong> —— 矢量、可缩放,跟着 deck 的配色走,放大不糊。</span>
-  <span class="col"><b>三 · 封面同源</b>服务端把指定那一页排成 SVG:画布 960×700,字号行高颜色取自主题 CSS,字体子集内嵌 —— 于是封面图和讲台里那一页,看着一样。</span>
+  <span class="col"><b>一 · 二维分页</b>横向的 <code>---</code> 是换主题,纵向的 <code>--</code> 是同一主题的下一页。系列的首屏是钩子,后面才是详情。一份 deck 至少十二页,平均每系列三页以上。</span>
+  <span class="col"><b>二 · 图表内联</b><code>draw</code> 围栏在服务端被换成<strong>内联 SVG</strong> —— 矢量、可缩放,跟着 deck 的配色走,放大不糊。结构图另走 <code>draw/</code> 端点:seq、arch2、erd、lifecycle、kanban…</span>
+  <span class="col"><b>三 · 封面同源</b>服务端把指定那一页排成 SVG:画布 960×700,字号行高颜色取自主题 CSS,字体子集内嵌 —— 于是封面图和讲台里那一页,看着一样。改一个字,封面跟着变。</span>
 </span>
 
 --
@@ -125,6 +139,13 @@ n=b;fe;浏览器(讲台);;r0c0&n=gh;ext;markdown 源站;;r0c1&n=w;be;ppt Worker;
 # 封面不是封面
 
 <p class="body">杂志的封面每天都要抢读者一眼。演示的封面也一样:它不是"这次讲什么"的说明,是<strong>这次讲什么</strong>本身的一句话。</p>
+
+<ul class="body">
+  <li>服务端把<strong>指定的那一页</strong>排成 SVG —— 矢量、可缩放,大小用 <code>width</code> 控制</li>
+  <li>画布 960×700,字号、行高、颜色都取自主题 CSS</li>
+  <li>字体子集<strong>内嵌</strong> —— <code>img</code> 里取不到外部字体</li>
+  <li>测量的字,就是渲染的字</li>
+</ul>
 
 <div class="note">
   <b>Note</b>
@@ -177,10 +198,12 @@ n=b;fe;浏览器(讲台);;r0c0&n=gh;ext;markdown 源站;;r0c1&n=w;be;ppt Worker;
 # 现状:讲台上有什么
 
 <span class="cols">
-  <span class="col"><b>键位</b><code>← →</code> 换主题,换主题内的页。<code>S</code> 演讲者备注,跨窗口同步。<code>W</code> 标注:画笔 / 荧光笔 / 划词高亮,<code>Z</code> <code>Y</code> 撤销重做,<code>ESC</code> 缩略图总览。</span>
-  <span class="col"><b>标注</b>钉在<strong>页</strong>上,翻回来还在。观众屏只见内容,不见工具 —— 标注是讲者的,不是观众的。</span>
-  <span class="col"><b>手机</b>另一套:竖屏画布、上下滑翻页、二维小地图。不是"缩小的桌面版",是照视频软件的用法重做的。</span>
+  <span class="col"><b>键位</b><code>← →</code> 换主题、换主题内的页。<code>S</code> 演讲者备注,跨窗口同步。<code>W</code> 标注:画笔 / 荧光笔 / 划词高亮。<code>Z</code> <code>Y</code> 撤销重做,<code>ESC</code> 缩略图总览。</span>
+  <span class="col"><b>标注</b>钉在<strong>页</strong>上,翻回来还在。观众屏只见内容,不见工具 —— 标注是讲者的,不是观众的。选中文字即上高亮,默认国际红。</span>
+  <span class="col"><b>手机</b>另一套:竖屏画布、上下滑翻页、二维小地图、底部抽屉信息栏。不是"缩小的桌面版",是照视频软件的用法重做的。</span>
 </span>
+
+<p class="body">三份案例点开就讲:<strong>五分钟</strong>(写 deck 的语法速查)、<strong>图表</strong>(draw 图表与真实数据)、<strong>datalink</strong>(数据在链接里)。都在首页的 gallery 里。</p>
 
 --
 
@@ -188,12 +211,12 @@ n=b;fe;浏览器(讲台);;r0c0&n=gh;ext;markdown 源站;;r0c1&n=w;be;ppt Worker;
 
 <span class="wordmark">演讲</span>
 
-<span class="col c1"><b>入口</b>x-cmd.com/ppt<br>?url= 传地址<br>?content= 传原文</span>
-<span class="col c2"><b>素材</b>markdown 直出<br>draw 图内联<br>reveal.js 讲台</span>
-<span class="col c3"><b>案例</b>五分钟 · 图表<br>datalink · 能力全景<br>都在 gallery 里</span>
+<span class="col c1"><b>入口</b>x-cmd.com/ppt<br>?url= 传地址<br>?content= 传原文<br>github.com/x-cmd/ppt</span>
+<span class="col c2"><b>素材</b>markdown 直出<br>draw 图内联<br>reveal.js 讲台<br>宋体 + Fraunces</span>
+<span class="col c3"><b>案例</b>五分钟 · 图表<br>datalink · 能力全景<br>九份 demo deck<br>都在 gallery 里</span>
 
 <span class="eof">— 现在就去讲一场 —</span>
 
 ```draw
-type=qr&d=https://x-cmd.com/ppt&fg=%231b1712&bg=%23ffffff&w=240&h=240
+type=qr&d=https://x-cmd.com/ppt&fg=%231b1712&bg=%23f3eee4&w=240&h=240
 ```

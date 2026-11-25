@@ -1,5 +1,6 @@
 ---
 look: swiss
+transition: fade
 ---
 
 <!-- .slide: data-layout="sw-statement" -->
@@ -46,7 +47,7 @@ type=bar&t=xcmd&labels=一月,二月,三月,四月&values=12,19,14,23&w=720&h=38
 
 # 数据图的参数
 
-<span class="row"><span class="k">type</span><span class="v">图种:bar · line · pie · radar · sankey · gauge · area · scatter …</span></span>
+<span class="row"><span class="k">type</span><span class="v">图种:bar · line · pie · radar · sankey · gauge</span></span>
 <span class="row"><span class="k">labels</span><span class="v">类目名,逗号分隔</span></span>
 <span class="row"><span class="k">values</span><span class="v">数值,与 labels 一一对应</span></span>
 <span class="row"><span class="k">t</span><span class="v">风格:配色 + 字体 + 网格,一套皮</span></span>
@@ -89,7 +90,7 @@ type=line&t=xcmd&labels=一季,二季,三季,四季,五季,六季&values=120,180
 <span class="row"><span class="k">t=opendata</span><span class="v">公开数据皮 —— 明亮底,适合截图外发</span></span>
 <span class="row"><span class="k">t=pipeline</span><span class="v">流程皮 —— 适合画流转</span></span>
 <span class="row"><span class="k">t=rank</span><span class="v">排行皮 —— 适合画榜单</span></span>
-<span class="row"><span class="k">t=market-mono</span><span class="v">等宽皮 —— 适合对齐密集标签</span></span>
+<span class="row"><span class="k">t=market</span><span class="v">等宽皮 market-mono —— 适合对齐密集标签</span></span>
 <span class="row"><span class="k">十几套</span><span class="v">evil · opendata · market-mono · pipeline · rank …</span></span>
 
 ---
@@ -106,7 +107,7 @@ type=line&t=xcmd&labels=一季,二季,三季,四季,五季,六季&values=120,180
 
 # 外面套一层链接,图就能点
 
-[![各模块行数](https://x-cmd.com/draw?type=hbar&t=xcmd&labels=排版,取数,路由,页面&values=615,272,263,327&w=720&h=360&title=ppt%20各模块行数&unit=%E8%A1%8C)](https://x-cmd.com/draw/explore?type=hbar&t=xcmd&labels=排版,取数,路由,页面&values=615,272,263,327&w=720&h=360&title=ppt%20各模块行数&unit=%E8%A1%8C)
+[![月度活跃](https://x-cmd.com/draw?type=bar&t=xcmd&labels=一月,二月,三月,四月&values=12,19,14,23&w=720&h=380&title=月度活跃)](https://x-cmd.com/draw/explore?type=bar&t=xcmd&labels=一月,二月,三月,四月&values=12,19,14,23&w=720&h=380&title=月度活跃)
 
 <span class="sw-note"><b>FIG.3</b> — 讲台上点一下跳进 draw 的 explore:悬停看数、现场改参数,当场讲清楚这张图怎么来的。</span>
 
@@ -231,12 +232,14 @@ type=bar&labels=标题区,主体区,留白区&values=22,46,32&w=700&h=280&title=
 
 # 配色:图跟着 deck 走
 
-<span class="row"><span class="k">--ppt-chart-ink</span><span class="v">线的颜色 —— 瑞士式是纯墨 #111111</span></span>
-<span class="row"><span class="k">--ppt-chart-text</span><span class="v">字的颜色 —— 别用纯黑,留一点暖</span></span>
-<span class="row"><span class="k">--ppt-chart-muted</span><span class="v">次要信息 —— 轴线、浅色标签</span></span>
-<span class="row"><span class="k">--ppt-chart-grid</span><span class="v">网格线 —— 一根发丝就够</span></span>
-<span class="row"><span class="k">--ppt-chart-accent</span><span class="v">强调色 —— 一根红 #e63312 打重点</span></span>
-<span class="row"><span class="k">--ppt-chart-font</span><span class="v">图里的字体 —— 无衬线,跟正文同一套</span></span>
+<span class="row"><span class="k">chart-ink</span><span class="v">线的颜色 —— 瑞士式是纯墨 #111111</span></span>
+<span class="row"><span class="k">chart-text</span><span class="v">字的颜色 —— 别用纯黑,留一点暖</span></span>
+<span class="row"><span class="k">chart-muted</span><span class="v">次要信息 —— 轴线、浅色标签</span></span>
+<span class="row"><span class="k">chart-grid</span><span class="v">网格线 —— 一根发丝就够</span></span>
+<span class="row"><span class="k">chart-accent</span><span class="v">强调色 —— 一根红 #e63312 打重点</span></span>
+<span class="row"><span class="k">chart-font</span><span class="v">图里的字体 —— 无衬线,跟正文同一套</span></span>
+
+<span class="sw-note">变量名全称是 `--ppt-chart-*` —— 在 deck 的 `style:` 里改,图立刻换色。</span>
 
 --
 

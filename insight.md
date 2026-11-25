@@ -148,19 +148,19 @@ type=sankey&labels=搜索,社区,口碑,广告,注册,试用,付费&links=搜索
 <div class="ad-tl" style="--ad-tl-n:4">
   <div class="node">
     <span class="what">口碑曲线开始抬头,自然流量占比稳在七成</span>
-    <span class="when">09 月</span>
+    <span class="when">08 月</span>
   </div>
   <div class="node">
     <span class="what">社区帖破圈,注册量抬到月 260</span>
-    <span class="when">10 月</span>
+    <span class="when">09 月</span>
   </div>
   <div class="node">
     <span class="what">搜索与社区成为基本盘,试用率提升</span>
-    <span class="when">11 月</span>
+    <span class="when">10 月</span>
   </div>
   <div class="node">
-    <span class="what">MAU 冲到 2.4 万,倍数见顶</span>
-    <span class="when">12 月</span>
+    <span class="what">MAU 冲到 2.4 万,三个月倍数见顶</span>
+    <span class="when">11 月</span>
   </div>
 </div>
 

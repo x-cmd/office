@@ -12,7 +12,7 @@ transition: fade
 
 ## 架构与流程图 · 从一次打开到一张图
 
-<span class="rev">DWG № 2026-1125 · SCALE 1:1 · SHEET 1/12</span>
+<span class="rev">DWG № 2026-1125 · SCALE 1:1 · SHEET 1/13</span>
 
 --
 
@@ -41,7 +41,7 @@ transition: fade
 # 打开一份 deck 时
 
 ```draw/seq
-n=u;fe;浏览器;;r0c0&n=gh;ext;GitHub;;r0c1&n=dr;svc;draw;;r0c2&e=u;app;打开 ?url=&e=app;gh;直读正文与评论&e=app;dr;展开图表&title=一次打开&w=720&h=320
+n=u;fe;浏览器;;r0c0&n=app;fe;讲台;;r0c1&n=gh;ext;GitHub;;r0c2&n=dr;svc;draw;;r0c3&e=u;app;打开 ?url&e=app;gh;直读正文与评论&e=app;dr;展开图表&title=一次打开&w=760&h=300
 ```
 
 <span class="figcap"><b>FIG.1</b> — OPEN PIPELINE · 浏览器直读源站,CORS 受阻才回落服务端</span>
@@ -185,7 +185,7 @@ n=tenants;table;tenants;id:uuid (pk)%0Aslug:text (uk)%0Aplan:text&n=users;table;
 
 <span class="endmark">EOF</span>
 
-<span class="sub">SHEET 12/12 · 架构即 URL:https://x-cmd.com/ppt</span>
+<span class="sub">SHEET 13/13 · 架构即 URL:https://x-cmd.com/ppt</span>
 
 ```draw
 type=qr&d=https://x-cmd.com/ppt&fg=%230a1524&bg=%23ffffff&w=240&h=240
