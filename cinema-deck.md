@@ -1,4 +1,5 @@
 ---
+title: 电影字幕
 look: cinema
 ---
 

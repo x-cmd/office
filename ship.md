@@ -1,4 +1,5 @@
 ---
+title: 从想法到上线
 look: poster
 cover:
   title: 从想法到上线

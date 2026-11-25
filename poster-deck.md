@@ -1,4 +1,5 @@
 ---
+title: 宣传画报
 look: poster
 ---
 

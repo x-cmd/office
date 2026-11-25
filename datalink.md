@@ -1,4 +1,5 @@
 ---
+title: 数据在链接里的理念
 look: cinema
 ---
 

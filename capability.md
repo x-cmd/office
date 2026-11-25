@@ -1,4 +1,5 @@
 ---
+title: 模板能力全景
 template: deck
 theme: black
 transition: fade

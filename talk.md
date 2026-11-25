@@ -1,4 +1,5 @@
 ---
+title: 把 markdown 变成一场演讲
 look: editorial
 transition: fade
 ---

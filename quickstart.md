@@ -1,4 +1,5 @@
 ---
+title: 五分钟,学会写 deck
 look: terminal
 ---
 

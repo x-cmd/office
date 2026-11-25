@@ -1,4 +1,5 @@
 ---
+title: 一屏一图
 theme: black
 look: keynote
 transition: fade

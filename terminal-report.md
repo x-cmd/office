@@ -1,4 +1,5 @@
 ---
+title: 终端
 look: terminal
 ---
 

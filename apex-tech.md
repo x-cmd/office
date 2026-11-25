@@ -1,4 +1,5 @@
 ---
+title: DECK AS CODE
 theme: black
 look: blueprint
 transition: fade

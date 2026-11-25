@@ -1,4 +1,5 @@
 ---
+title: 图表:把数据搬上讲台
 look: swiss
 transition: fade
 ---
