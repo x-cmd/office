@@ -18,8 +18,8 @@ markdown 里的一行 draw,讲台上展开成原生 SVG。
 # 这场讲什么
 
 <span class="item"><span class="no">01</span><span class="t">数据图</span><span class="lead"></span><span class="pg">03</span></span>
-<span class="item"><span class="no">02</span><span class="t">结构图</span><span class="lead"></span><span class="pg">08</span></span>
-<span class="item"><span class="no">03</span><span class="t">怎么配色与排版</span><span class="lead"></span><span class="pg">13</span></span>
+<span class="item"><span class="no">02</span><span class="t">结构图</span><span class="lead"></span><span class="pg">14</span></span>
+<span class="item"><span class="no">03</span><span class="t">怎么配色与排版</span><span class="lead"></span><span class="pg">20</span></span>
 
 ---
 
@@ -93,6 +93,26 @@ type=line&t=xcmd&labels=一季,二季,三季,四季,五季,六季&values=120,180
 <span class="row"><span class="k">t=market</span><span class="v">等宽皮 market-mono —— 适合对齐密集标签</span></span>
 <span class="row"><span class="k">十几套</span><span class="v">evil · opendata · market-mono · pipeline · rank …</span></span>
 
+--
+
+<!-- .slide: data-layout="sw-figure" -->
+
+# 真实数据:dbnomics
+
+[![G20 GDP](https://x-cmd.com/draw?type=hbar&t=opendata&labels=USA,China,Germany,Japan,India,UK,France,Italy,Canada,Brazil,Russia,Korea&values=30337.2,19534.9,4921.6,4389.3,4271.9,3730.3,3283.4,2459.6,2330.3,2307.2,2195.7,1947.1&w=780&h=440&title=G20+%C2%B7+GDP+2025&unit=USD+bn)](https://x-cmd.com/draw/explore?type=hbar&t=opendata&labels=USA,China,Germany,Japan,India,UK,France,Italy,Canada,Brazil,Russia,Korea&values=30337.2,19534.9,4921.6,4389.3,4271.9,3730.3,3283.4,2459.6,2330.3,2307.2,2195.7,1947.1&w=780&h=440&title=G20%20%C2%B7%20GDP%202025&unit=USD%20bn)
+
+<span class="sw-note"><b>FIG.3</b> — 数字来自 DBnomics,图是 draw 的 URL:公开、机器可读。点一下照样进 explore。</span>
+
+--
+
+<!-- .slide: data-layout="sw-spec" -->
+
+# 命令行也能取
+
+<span class="row"><span class="k">data</span><span class="v">x dbnomics data &lt;series&gt; —— 取一条序列</span></span>
+<span class="row"><span class="k">align</span><span class="v">x dbnomics align &lt;a&gt; &lt;b&gt; &lt;c&gt; —— 把几个指标对齐</span></span>
+<span class="row"><span class="k">出来</span><span class="v">一行序列 —— 贴进 draw 的 values= 就是一张图</span></span>
+
 ---
 
 <!-- .slide: data-layout="sw-statement" -->
@@ -109,7 +129,21 @@ type=line&t=xcmd&labels=一季,二季,三季,四季,五季,六季&values=120,180
 
 [![月度活跃](https://x-cmd.com/draw?type=bar&t=xcmd&labels=一月,二月,三月,四月&values=12,19,14,23&w=720&h=380&title=月度活跃)](https://x-cmd.com/draw/explore?type=bar&t=xcmd&labels=一月,二月,三月,四月&values=12,19,14,23&w=720&h=380&title=月度活跃)
 
-<span class="sw-note"><b>FIG.3</b> — 讲台上点一下跳进 draw 的 explore:悬停看数、现场改参数,当场讲清楚这张图怎么来的。</span>
+<span class="sw-note"><b>FIG.4</b> — 讲台上点一下跳进 draw 的 explore:悬停看数、现场改参数,当场讲清楚这张图怎么来的。</span>
+
+--
+
+<!-- .slide: data-layout="sw-spec" -->
+
+# 封面图也带参数
+
+任何一页都能排成 SVG 放进 README:
+
+<span class="row"><span class="k">slide=3</span><span class="v">第 3 页(展平页号)</span></span>
+<span class="row"><span class="k">slide=4.1</span><span class="v">第 4 主题的第 2 页</span></span>
+<span class="row"><span class="k">anim</span><span class="v">anim=0,2,5 —— 依次播这三页</span></span>
+<span class="row"><span class="k">freeze=5</span><span class="v">定格在第 5 页</span></span>
+<span class="row"><span class="k">dur=2</span><span class="v">每页停留秒数</span></span>
 
 ---
 
@@ -142,7 +176,7 @@ type=line&t=xcmd&labels=一季,二季,三季,四季,五季,六季&values=120,180
 n=u;fe;浏览器;;r0c0&n=app;be;ppt webapp;;r0c1&n=gh;ext;GitHub;;r0c2&n=dr;svc;draw;;r0c3&e=u;app;打开 ?url=&e=app;gh;直读正文与评论&e=app;dr;展开图表&title=一次打开&w=720&h=320
 ```
 
-<span class="sw-note"><b>FIG.4</b> — 参与方按 n= 出现的顺序从左到右排;e= 按时间先后写,回信在 label 尾段加 ;dash。</span>
+<span class="sw-note"><b>FIG.5</b> — 参与方按 n= 出现的顺序从左到右排;e= 按时间先后写,回信在 label 尾段加 ;dash。</span>
 
 --
 
@@ -154,7 +188,7 @@ n=u;fe;浏览器;;r0c0&n=app;be;ppt webapp;;r0c1&n=gh;ext;GitHub;;r0c2&n=dr;svc;
 n=gw;cloud;API Gateway;REST 入口;r0c0&n=fn;be;Lambda;业务逻辑;r1c0&n=ddb;db;DynamoDB;数据表;r2c0&n=iam;sec;IAM;最小权限;r0c1&n=cog;be;CloudWatch;指标与告警;r3c0&e=gw;fn;同步调用&e=gw;fn;异步入队&e=fn;ddb;读写&e=iam;fn;授权&b=Edge;gw iam&b=Data;fn ddb&title=无服务器 API&w=820&h=380
 ```
 
-<span class="sw-note"><b>FIG.5</b> — 架构图词汇:fe 前端 · be 后端 · db 数据库 · cloud 云服务 · sec 安全 · bus 消息 · svc 服务 · ext 外部。</span>
+<span class="sw-note"><b>FIG.6</b> — 架构图词汇:fe 前端 · be 后端 · db 数据库 · cloud 云服务 · sec 安全 · bus 消息 · svc 服务 · ext 外部。</span>
 
 --
 
@@ -181,7 +215,7 @@ n=gw;cloud;API Gateway;REST 入口;r0c0&n=fn;be;Lambda;业务逻辑;r1c0&n=ddb;d
 n=commit;terminal;提交;push / PR;r0c0&n=lint;state;静态检查;eslint + tsc;r1c0&n=lintok;decision;通过?;;r2c0&n=unit;state;单元测试;vitest;r2c1&n=unitok;decision;通过?;;r3c1&n=build;state;构建镜像;docker buildx;r3c2&n=staging;state;部署 staging;r4c2&n=gate;decision;冒烟通过?;;r5c2&n=prod;state;全量发布;canary;r6c2&n=done;terminal;上线;;r7c2&n=fail;terminal;失败;通知作者&e=commit;lint&e=lint;lintok&e=lintok;unit;是&e=lintok;fail;否&e=unit;unitok;是&e=unitok;fail;否&e=build;staging&e=staging;gate&e=gate;prod;是&e=gate;fail;否&e=prod;done&title=CI 流水线&w=780&h=430
 ```
 
-<span class="sw-note"><b>FIG.6</b> — 状态图词汇:state 状态 · decision 判定 · terminal 起止。决策节点永远两条出路:是 / 否。</span>
+<span class="sw-note"><b>FIG.7</b> — 状态图词汇:state 状态 · decision 判定 · terminal 起止。决策节点永远两条出路:是 / 否。</span>
 
 ---
 
@@ -201,7 +235,7 @@ n=commit;terminal;提交;push / PR;r0c0&n=lint;state;静态检查;eslint + tsc;r
 type=bar&labels=标题区,主体区,留白区&values=22,46,32&w=700&h=280&title=一页纸的面积分配
 ```
 
-<span class="sw-note"><b>FIG.7</b> — 主体区只占四成半,剩下的是标题与留白。图注只说口径,不复述图里已经有的东西。</span>
+<span class="sw-note"><b>FIG.8</b> — 主体区只占四成半,剩下的是标题与留白。图注只说口径,不复述图里已经有的东西。</span>
 
 --
 
