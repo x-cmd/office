@@ -110,7 +110,7 @@ n=b;fe;浏览器(讲台);;r0c0&n=gh;ext;markdown 源站;;r0c1&n=w;be;ppt Worker;
 
 <span class="cols">
   <span class="col"><b>一 · 二维分页</b><code>---</code> 横向分页是换主题,<code>--</code> 纵向分页是同一主题的下一页。系列的首屏是钩子,后面才是详情。</span>
-  <span class="col"><b>二 · 图表内联</b><code>```draw</code> 围栏在服务端被换成<strong>内联 SVG</strong> —— 矢量、可缩放,跟着 deck 的配色走,放大不糊。</span>
+  <span class="col"><b>二 · 图表内联</b><code>draw</code> 围栏在服务端被换成<strong>内联 SVG</strong> —— 矢量、可缩放,跟着 deck 的配色走,放大不糊。</span>
   <span class="col"><b>三 · 封面同源</b>服务端把指定那一页排成 SVG:画布 960×700,字号行高颜色取自主题 CSS,字体子集内嵌 —— 于是封面图和讲台里那一页,看着一样。</span>
 </span>
 

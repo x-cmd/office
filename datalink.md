@@ -22,6 +22,8 @@ look: cinema
 
 # 1
 
+## 一个链接,一份数据
+
 ---
 
 <!-- .slide: data-layout="ci-chapter" -->
@@ -58,7 +60,9 @@ look: cinema
 
 <!-- .slide: data-layout="ci-frame" -->
 
-# 所以「链接即数据」不是修辞,是一种取舍
+# 「链接即数据」不是修辞,是一种取舍
+
+## 副本要维护,链接不用
 
 <span class="ci-note">data in the link</span>
 
@@ -82,7 +86,7 @@ look: cinema
 
 <!-- .slide: data-layout="ci-line" -->
 
-# 人打开 /draw,看到一张渲染好的 SVG
+# 人打开 /draw,看到一张 SVG
 
 ## agent 打开 /draw.json,拿到机器可读的 JSON 规格
 
@@ -140,9 +144,9 @@ look: cinema
 
 <!-- .slide: data-layout="ci-line" -->
 
-# draw 把数据放进 URL,打开就是矢量 SVG
+# draw 把数据放进 URL
 
-## 每张图自带 metadata,机器顺手就能读
+## 打开就是矢量 SVG,每张图自带 metadata
 
 --
 
@@ -150,7 +154,7 @@ look: cinema
 
 # ppt 让 markdown 进,演讲出
 
-## 渲染在浏览器,服务端只出壳;封面是 SVG,README 里点图开讲
+## 渲染在浏览器,服务端只出壳;README 里点图就开讲
 
 --
 
@@ -212,7 +216,7 @@ look: cinema
 
 <!-- .slide: data-layout="ci-credit" -->
 
-# WHY IT'S WORTH IT
+# 为什么值得
 
 <span class="row"><b>零依赖</b>人和 agent 各取所需,不必约定文件格式</span>
 <span class="row"><b>永久可复现</b>链接在,数据和图就在</span>

@@ -98,7 +98,7 @@ type=pie&labels=搜索,社区,口碑,广告&values=42,26,21,11&w=640&h=420
 <div class="ppt-rail">
   <span class="ppt-label">结论</span>
   <b>口碑是最贵的一块</b>
-  <p>搜索与社区是基本盘;口碑占两成还在涨,广告只占一成(示例数据)。</p>
+  <p>搜索与社区是基本盘;口碑占两成还在涨,广告只占一成(示例数据)</p>
 </div>
 
 --
@@ -195,14 +195,14 @@ x-cmd.com/insight <!-- .element: class="ppt-abs ppt-bl" -->
 <span class="kicker">BENCHMARK · 跟友商比</span>
 
 ```draw
-type=radar&t=evil&labels=速度,稳定,生态,价格&series=我们:9,8,6,9&series=友商A:7,7,8,6&w=880&h=380
+type=radar&t=evil&labels=速度,稳定,生态,价格&series=我们:90,80,60,90&series=友商A:70,70,80,60&w=560&h=480
 ```
 
 <span class="figcap"><b>FIG.03</b> — 速度与价格是我们赢的地方,生态是下一课(示例数据)</span> <!-- .element: class="figcap ppt-abs ppt-bl" -->
 
 --
 
-<!-- .slide: data-layout="ad-manifesto" data-title="口碑" class="ppt-ghost ppt-ghost--center" -->
+<!-- .slide: data-layout="ad-manifesto" data-title="一屏一图" class="ppt-ghost ppt-ghost--br" -->
 
 <h1>数字不会说话,<br><span class="grad">图替它说。</span></h1>
 
