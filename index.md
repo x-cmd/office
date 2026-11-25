@@ -11,9 +11,10 @@ cover:
 
 <!-- .slide: data-layout="gallery" data-columns="2" -->
 
-# 四份演示,点开就讲
+# 演示,点开就讲
 
 <div class="ppt-gallery">
+<a href="?url=https%3A%2F%2Fraw.githubusercontent.com%2Fx-cmd%2Foffice%2Fmain%2Fagent-report.md"><img src="/ppt/cover.svg?url=https%3A%2F%2Fraw.githubusercontent.com%2Fx-cmd%2Foffice%2Fmain%2Fagent-report.md" alt="agent 的工作汇报(report look)"></a>
 <a href="?url=https%3A%2F%2Fraw.githubusercontent.com%2Fx-cmd%2Foffice%2Fmain%2Ftalk.md"><img src="/ppt/cover.svg?url=https%3A%2F%2Fraw.githubusercontent.com%2Fx-cmd%2Foffice%2Fmain%2Ftalk.md" alt="把 markdown 变成一场演讲"></a>
 <a href="?url=https%3A%2F%2Fraw.githubusercontent.com%2Fx-cmd%2Foffice%2Fmain%2Fquickstart.md"><img src="/ppt/cover.svg?url=https%3A%2F%2Fraw.githubusercontent.com%2Fx-cmd%2Foffice%2Fmain%2Fquickstart.md" alt="五分钟:写 deck 的语法速查"></a>
 <a href="?url=https%3A%2F%2Fraw.githubusercontent.com%2Fx-cmd%2Foffice%2Fmain%2Fcharts.md"><img src="/ppt/cover.svg?url=https%3A%2F%2Fraw.githubusercontent.com%2Fx-cmd%2Foffice%2Fmain%2Fcharts.md" alt="图表:把数据搬上讲台"></a>
