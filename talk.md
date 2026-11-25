@@ -1,204 +1,199 @@
 ---
-template: deck
-theme: black
-cover:
-  title: 把 markdown 变成一场演讲
-  subtitle: 一个长链接,就是入口
-  author: x-cmd
-  date: 2026-11-23
-  background: radial-gradient(#24406e 0%, #16233d 48%, #0b1120 100%)
+look: editorial
+transition: fade
 ---
 
-<!-- .slide: data-layout="statement" data-background-gradient="radial-gradient(#24406e 0%, #16233d 48%, #0b1120 100%)" -->
+<!-- .slide: data-layout="ed-masthead" -->
 
-# 一个链接,就是一场演讲
+<span class="mast">演讲<span class="vol">VOL.01 / 2026.11</span></span>
 
-**贴进 README,别人点开就能讲。**
+# 把 markdown<br>变成一场演讲
 
-<svg viewBox="0 0 900 70" width="700" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="hl" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#4f8cff"/>
-      <stop offset="0.5" stop-color="#7b6bff"/>
-      <stop offset="1" stop-color="#b06bff"/>
-    </linearGradient>
-  </defs>
-  <rect x="330" y="28" width="240" height="5" rx="2.5" fill="url(#hl)"/>
-  <circle cx="300" cy="30.5" r="4" fill="#4f8cff"/>
-  <circle cx="600" cy="30.5" r="4" fill="#b06bff"/>
-</svg>
+<span class="dek">一个长链接,就是入口。贴进 README,别人点开就能讲 —— 不装工具、不导 PDF、不发附件。</span>
 
----
-
-<!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#1c3050 0%, #122036 55%, #0b1120 100%)" -->
-
-# 旧剧本
-
-<svg viewBox="0 0 900 150" width="760" xmlns="http://www.w3.org/2000/svg">
-  <text x="800" y="130" text-anchor="middle" font-size="140" font-weight="700" fill="#7c9dff" opacity="0.13" font-family="ui-sans-serif">01</text>
-</svg>
-
-## AI 十分钟写完 deck,然后呢
-
-- 装工具、导 PDF、调样式 —— 每台机器重来一遍 <!-- .element: class="fragment" -->
-- 发出去的是**文件**:打不开、看不了、改不动 <!-- .element: class="fragment" -->
-- 三个月后,版本已经对不上了 <!-- .element: class="fragment" -->
+<span class="byline">文 / X-CMD 研究室 · 2026 年 11 月</span>
 
 --
 
-<!-- .slide: data-layout="quote" data-background-gradient="radial-gradient(#2a1f4d 0%, #181130 55%, #0e0a18 100%)" -->
+<!-- .slide: data-layout="ed-article" -->
 
-> 分享出去的应该是**内容**,不是文件。
+<span class="folio">03</span>
 
-markdown 早就躺在仓库里了 —— 缺的只是一个**入口**。
+<span class="kicker">What · 这是什么</span>
+
+# 文件的老毛病
+
+<p class="ppt-lead body">过去十年,我们交换想法的方式是把文件丢来丢去。PPT、PDF、截图 —— 每传一次,就死掉一点:版本对不上,链接过期,字体丢失。</p>
+
+<p class="body">发出去的是<strong>文件</strong>,收到的人看到的却是<strong>过去某一帧的你</strong>。</p>
+
+<div class="aside">
+  <b>Sidebar</b>
+  装工具、导 PDF、调样式 —— 每台机器重来一遍。<br>
+  三个月后,版本已经对不上了。
+</div>
+
+--
+
+<!-- .slide: data-layout="ed-figure" -->
+
+<span class="folio">04</span>
+
+<span class="kicker">Figure · 旧剧本</span>
+
+# 三步,变成三箱附件
+
+```draw/seq
+n=ai;be;AI 十分钟写完 deck;;r0c0&n=tool;ext;装工具 / 导 PDF;;r0c1&n=mail;be;发附件;;r0c2&e=ai;tool;每台机器重来一遍&e=tool;mail;对方打不开&e=mail;ai;版本对不上&title=旧剧本&w=840
+```
+
+<span class="figcap"><b>FIG.1</b> —— 从"写完"到"发出去"要跨过的三道工序。每一道都在文件上,不在内容上。</span>
+
+--
+
+<!-- .slide: data-layout="ed-callout" -->
+
+<span class="kicker">By the numbers</span>
+
+# 1
+
+<span class="cap">一个链接,就是一场演讲。不用装软件,不用导出,不用发附件 —— 别人点开,就是一场已经准备好的演讲。</span>
+
+<span class="src">X-CMD 研究室 ·《把 markdown 变成一场演讲》</span>
 
 ---
 
-<!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#1c3050 0%, #122036 55%, #0b1120 100%)" -->
+<!-- .slide: data-layout="ed-article" -->
+
+<span class="folio">07</span>
+
+<span class="kicker">How · 怎么做到</span>
 
 # 新剧本:只贴地址
 
-<svg viewBox="0 0 900 150" width="760" xmlns="http://www.w3.org/2000/svg">
-  <text x="800" y="130" text-anchor="middle" font-size="140" font-weight="700" fill="#7c9dff" opacity="0.13" font-family="ui-sans-serif">02</text>
-</svg>
+<p class="ppt-lead body">渲染搬到<strong>浏览器</strong>,输入缩成一个地址。markdown 本来就躺在仓库里 —— 缺的只是一个<strong>入口</strong>。</p>
 
-```text
-https://x-cmd.com/ppt?url=<markdown 的地址>
+<p class="body">内容不动,仓库不动,工具不用装。</p>
+
+<div class="aside">
+  <b>Sidebar</b>
+  不想找托管?全文塞进参数也行:<br>
+  <code>?content=</code> 传 URL 编码的 markdown,<br>
+  一两个屏幕的短 deck,一条链接走天下。
+</div>
+
+--
+
+<!-- .slide: data-layout="ed-figure" -->
+
+<span class="folio">08</span>
+
+<span class="kicker">Figure · 架构</span>
+
+# 浏览器直读,常见路径零服务端调用
+
+```draw/seq
+n=b;fe;浏览器(讲台);;r0c0&n=gh;ext;markdown 源站;;r0c1&n=w;be;ppt Worker;;r0c2&e=b;gh;fetch 直读&e=b;w;被 CORS 挡住才回落&title=取源的两条路&w=840
 ```
 
-渲染搬到**浏览器**,输入缩成一个地址:
-
-- **内容不动** <!-- .element: class="fragment" -->
-- **仓库不动** <!-- .element: class="fragment" -->
-- **工具不用装** <!-- .element: class="fragment" -->
+<span class="figcap"><b>FIG.2</b> —— 源站自带 CORS 头,浏览器直读零调用;CORS 被挡才回落服务端代取(校验 Referer、限体积、限频率)。</span>
 
 --
 
-## 内容直传也行
+<!-- .slide: data-layout="ed-columns" -->
 
-不想找托管?全文塞进参数:
+<span class="folio">09</span>
 
-```text
-https://x-cmd.com/ppt?content=<URL 编码的 markdown>
+<span class="kicker">Lectern · 讲台备忘</span>
+
+# 三件事,各占一页
+
+<span class="cols">
+  <span class="col"><b>一 · 二维分页</b><code>---</code> 横向分页是换主题,<code>--</code> 纵向分页是同一主题的下一页。系列的首屏是钩子,后面才是详情。</span>
+  <span class="col"><b>二 · 图表内联</b><code>```draw</code> 围栏在服务端被换成<strong>内联 SVG</strong> —— 矢量、可缩放,跟着 deck 的配色走,放大不糊。</span>
+  <span class="col"><b>三 · 封面同源</b>服务端把指定那一页排成 SVG:画布 960×700,字号行高颜色取自主题 CSS,字体子集内嵌 —— 于是封面图和讲台里那一页,看着一样。</span>
+</span>
+
+--
+
+<!-- .slide: data-layout="ed-note" -->
+
+<span class="folio">10</span>
+
+<span class="kicker">Margin · 一条边注</span>
+
+# 封面不是封面
+
+<p class="body">杂志的封面每天都要抢读者一眼。演示的封面也一样:它不是"这次讲什么"的说明,是<strong>这次讲什么</strong>本身的一句话。</p>
+
+<div class="note">
+  <b>Note</b>
+  README 里的标准嵌法:<br>
+  <code>[![](cover.svg)](?url=…)</code><br>
+  封面永远与第一页同源同款 —— deck 改了,封面跟着变。
+</div>
+
+<span class="src">出处:X-CMD 研究室 ·《新剧本:只贴地址》</span>
+
+---
+
+<!-- .slide: data-layout="ed-timeline" -->
+
+<span class="folio">13</span>
+
+<span class="kicker">Boundary · 边界与现状</span>
+
+# 已知限制,摆在前台
+
+<p class="body">链接把文件的麻烦换掉了,但没有把现实换掉 —— 体积、限流、缓存,还有讲台上那些已经能用的东西,一并交代清楚。</p>
+
+<span class="tl">
+  <span class="entry"><span class="year">512K</span><span class="what">deck 体积上限</span><span class="note">一份 deck 最大 512KB,超了会被截断。</span></span>
+  <span class="entry"><span class="year">6K</span><span class="what">直传 URL 上限</span><span class="note">内容直传总 URL 约 6KB 原文,长 deck 仍需托管。</span></span>
+  <span class="entry"><span class="year">60/分</span><span class="what">取源限流</span><span class="note">每 IP 每分钟 60 次,共享出口容易触顶(403)。</span></span>
+  <span class="entry"><span class="year">24h</span><span class="what">浏览器缓存兜底</span><span class="note">源改了放映跟着变,最长的旧版本寿命 24 小时。</span></span>
+</span>
+
+--
+
+<!-- .slide: data-layout="ed-callout" -->
+
+<span class="kicker">By the numbers</span>
+
+# 0
+
+<span class="cap">常见路径下服务端参与次数:浏览器自带 CORS 头,markdown 直接读回来 —— 零回源。只有 CORS 被挡时,才回落 Worker 代取。</span>
+
+<span class="src">X-CMD 研究室 ·《浏览器直读》</span>
+
+--
+
+<!-- .slide: data-layout="ed-columns" -->
+
+<span class="folio">15</span>
+
+<span class="kicker">Lectern · 讲台备忘</span>
+
+# 现状:讲台上有什么
+
+<span class="cols">
+  <span class="col"><b>键位</b><code>← →</code> 换主题,换主题内的页。<code>S</code> 演讲者备注,跨窗口同步。<code>W</code> 标注:画笔 / 荧光笔 / 划词高亮,<code>Z</code> <code>Y</code> 撤销重做,<code>ESC</code> 缩略图总览。</span>
+  <span class="col"><b>标注</b>钉在<strong>页</strong>上,翻回来还在。观众屏只见内容,不见工具 —— 标注是讲者的,不是观众的。</span>
+  <span class="col"><b>手机</b>另一套:竖屏画布、上下滑翻页、二维小地图。不是"缩小的桌面版",是照视频软件的用法重做的。</span>
+</span>
+
+--
+
+<!-- .slide: data-layout="ed-colophon" -->
+
+<span class="wordmark">演讲</span>
+
+<span class="col c1"><b>入口</b>x-cmd.com/ppt<br>?url= 传地址<br>?content= 传原文</span>
+<span class="col c2"><b>素材</b>markdown 直出<br>draw 图内联<br>reveal.js 讲台</span>
+<span class="col c3"><b>案例</b>五分钟 · 图表<br>datalink · 能力全景<br>都在 gallery 里</span>
+
+<span class="eof">— 现在就去讲一场 —</span>
+
+```draw
+type=qr&d=https://x-cmd.com/ppt&fg=%231b1712&bg=%23ffffff&w=240&h=240
 ```
-
-一两个屏幕的短 deck,一条链接走天下。
-
----
-
-<!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#2a1f4d 0%, #181130 55%, #0e0a18 100%)" -->
-
-# 封面,也是一张链接
-
-<svg viewBox="0 0 900 150" width="760" xmlns="http://www.w3.org/2000/svg">
-  <text x="800" y="130" text-anchor="middle" font-size="140" font-weight="700" fill="#b48cff" opacity="0.15" font-family="ui-sans-serif">03</text>
-</svg>
-
-<a href="?url=https://raw.githubusercontent.com/x-cmd/office/main/talk.md"><img src="/ppt/cover.svg?url=https://raw.githubusercontent.com/x-cmd/office/main/talk.md" width="380" alt="本 deck 的封面"></a>
-
-服务端把指定那一页排成 **SVG** —— 矢量、可缩放,`width` 控制大小。
-
-点图 → 直接开讲。
-
---
-
-## README 里的标准嵌法
-
-```markdown
-[![](https://x-cmd.com/ppt/cover.svg?url=<deck 地址>)](https://x-cmd.com/ppt?url=<deck 地址>)
-```
-
-封面永远与第一页**同源同款** —— deck 改了,封面跟着变。
-
----
-
-<!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#1c3050 0%, #122036 55%, #0b1120 100%)" -->
-
-# 架构:浏览器直读
-
-<svg viewBox="0 0 900 150" width="760" xmlns="http://www.w3.org/2000/svg">
-  <text x="800" y="130" text-anchor="middle" font-size="140" font-weight="700" fill="#7c9dff" opacity="0.13" font-family="ui-sans-serif">04</text>
-</svg>
-
-## 常见路径零服务端调用
-
-<svg viewBox="0 0 780 300" width="640" xmlns="http://www.w3.org/2000/svg" font-family="ui-sans-serif, PingFang SC, sans-serif">
-  <defs>
-    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0 0 L10 5 L0 10 z" fill="#7c9dff"/>
-    </marker>
-  </defs>
-  <rect x="290" y="20" rx="10" width="200" height="52" fill="#16233d" stroke="#3d5a78"/>
-  <text x="390" y="52" text-anchor="middle" font-size="17" fill="#e8f0ff">浏览器(讲台)</text>
-  <rect x="40" y="200" rx="10" width="230" height="52" fill="#171b24" stroke="#3a4a63"/>
-  <text x="155" y="226" text-anchor="middle" font-size="15" fill="#c8d0da">markdown 源站(GitHub raw)</text>
-  <text x="155" y="244" text-anchor="middle" font-size="12" fill="#7f8ba0">自带 CORS 头 · 直读零调用</text>
-  <rect x="510" y="200" rx="10" width="230" height="52" fill="#1b1430" stroke="#5a3d78"/>
-  <text x="625" y="226" text-anchor="middle" font-size="15" fill="#dcd2f0">ppt Worker(回落 + SSR)</text>
-  <text x="625" y="244" text-anchor="middle" font-size="12" fill="#9d8bb8">CORS 被挡才代取 · cover.svg 出图</text>
-  <line x1="330" y1="72" x2="180" y2="196" stroke="#7c9dff" stroke-width="2" marker-end="url(#ar)"/>
-  <text x="215" y="120" font-size="12.5" fill="#7c9dff">fetch 直读 markdown</text>
-  <line x1="450" y1="72" x2="600" y2="196" stroke="#b48cff" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ar)"/>
-  <text x="500" y="120" font-size="12.5" fill="#b48cff">被 CORS 挡住 → 同源代理</text>
-</svg>
-
-被 CORS 挡住才回落服务端代取:校验 Referer、限体积、限频率。
-
---
-
-## 服务端只做一件难事
-
-把**指定的那一页**排成 SVG:
-
-- 画布 960×700,字号/行高/颜色取自主题 CSS
-- 字体子集**内嵌**(`<img>` 里取不到外部字体)
-- 测量的字,就是渲染的字
-
-于是封面图和浏览器里那一页,看着一样。
-
----
-
-<!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#2a1f4d 0%, #181130 55%, #0e0a18 100%)" -->
-
-# 讲台上有什么
-
-<svg viewBox="0 0 900 150" width="760" xmlns="http://www.w3.org/2000/svg">
-  <text x="800" y="130" text-anchor="middle" font-size="140" font-weight="700" fill="#b48cff" opacity="0.15" font-family="ui-sans-serif">05</text>
-</svg>
-
-| 键 | 能做什么 |
-|---|---|
-| `← → ↑ ↓` | 换主题 / 换主题内的页 |
-| `S` | 演讲者备注(跨窗口同步) |
-| `W` | **标注**:画笔 / 荧光笔 / 划词高亮 |
-| `Z` / `Y` | 标注撤销 / 重做 |
-| `ESC` | 缩略图总览 |
-
-标注钉在**页**上,翻回来还在;观众屏只见内容,不见工具。
-
---
-
-## 手机是另一套
-
-竖屏画布、上下滑翻页、二维小地图 —— 不是"缩小的桌面版",
-是照视频软件的用法重做的。
-
----
-
-<!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#1c3050 0%, #122036 55%, #0b1120 100%)" -->
-
-# 三份案例,点开就讲
-
-- **五分钟** —— 写 deck 的语法速查
-- **图表** —— draw 图表与真实数据
-- **datalink** —— 数据在链接里(理念篇)
-
-都在首页的 gallery 里,也都在你的收藏栏里。
-
----
-
-<!-- .slide: data-layout="end" data-background-gradient="radial-gradient(#24406e 0%, #16233d 48%, #0b1120 100%)" -->
-
-# 现在就去讲一场
-
-**https://x-cmd.com/ppt**
