@@ -16,6 +16,34 @@ cover:
 
 **能住进仓库,能住进 issue,能住进 URL。**
 
+--
+
+<!-- .slide: data-layout="two-col" -->
+
+# 怎么读这份 deck
+
+- **横向**是**系列**:六个系列,一个一个讲
+- **纵向**是**系列里的页**:每个系列 3–4 页,一页一件事
+- 每个系列的**第一页是钩子**:标题 + 一句摘要,其余是详情
+
+```text
+---            ← 新系列
+# 钩子
+一句摘要
+--
+## 详情一
+--
+## 详情二
+```
+
+--
+
+<!-- .slide: data-layout="fact" data-title="18" data-background-gradient="radial-gradient(#1d4e5f 0%, #14323e 52%, #0a161c 100%)" -->
+
+# 18
+
+十八页 · 六个系列 · 十二种内置版式,全都真的用上了。
+
 ---
 
 <!-- .slide: data-layout="section" data-background-gradient="radial-gradient(#1a2740 0%, #0b1120 75%)" -->
@@ -180,6 +208,22 @@ render(deck);
 ```text
 cover.svg?mode=info|chapters|mindmap|pages
 ```
+
+--
+
+<!-- .slide: data-layout="two-col" -->
+
+# 封面图与讲台同源
+
+封面图不是截图,是**同一套排版引擎**另画一遍:配色走 `palette:` 机制,
+几何装饰与页面外框走同一份数值 —— 所以 issue 里嵌的那张图,和点开之后
+看到的那一页,是同一副样子。
+
+| | 讲台 | 封面图 |
+|---|---|---|
+| 渲染 | 浏览器里的 reveal.js | 服务端排版成 SVG |
+| 配色 | `--r-*` 变量 | 同一批变量 |
+| 尺寸 | 跟随窗口 | 960×700(可 `?w=` `?h=`) |
 
 --
 
