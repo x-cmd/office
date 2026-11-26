@@ -65,7 +65,7 @@ look: cinema
 
 ## 副本要维护,链接不用
 
-<span class="ci-note">data in the link</span>
+data in the link
 
 ---
 
@@ -99,7 +99,7 @@ look: cinema
 
 ## 没有导出,没有同步,没有版本对不上
 
-<span class="ci-note">one link, two audiences</span>
+one link, two audiences
 
 --
 
@@ -117,7 +117,7 @@ look: cinema
 
 ## 可拼、可存、可转述 —— 一行地址栏就是一次完整表达
 
-<span class="ci-note">the URL is the API</span>
+the URL is the API
 
 ---
 
@@ -211,7 +211,7 @@ look: cinema
 
 ## 敏感的部分,放在链接之外
 
-<span class="ci-note">what a URL reveals</span>
+what a URL reveals
 
 --
 
@@ -219,10 +219,12 @@ look: cinema
 
 # 为什么值得
 
-<span class="row"><b>零依赖</b>人和 agent 各取所需,不必约定文件格式</span>
-<span class="row"><b>永久可复现</b>链接在,数据和图就在</span>
-<span class="row"><b>极简可审计</b>datalink.ac 的 devDependencies 只有一个 marked</span>
-<span class="row"><b>一次表达</b>处处可用 —— 这就是 data in the link</span>
+| | |
+| --- | --- |
+| **零依赖** | 人和 agent 各取所需,不必约定文件格式 |
+| **永久可复现** | 链接在,数据和图就在 |
+| **极简可审计** | datalink.ac 的 devDependencies 只有一个 marked |
+| **一次表达** | 处处可用 —— 这就是 data in the link |
 
 --
 
@@ -232,7 +234,7 @@ look: cinema
 
 ## 链接能装下图,就能装下表、装下文档、装下一次对话
 
-<span class="ci-note">datalink.ac</span>
+datalink.ac
 
 --
 
@@ -240,4 +242,4 @@ look: cinema
 
 # 数据在链接里
 
-<span class="ci-note">https://datalink.ac</span>
+https://datalink.ac

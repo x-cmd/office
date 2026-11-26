@@ -17,11 +17,13 @@ runner 起来第一件事不是编译,是把该有的环境变量摆平 —— �
 
 CI 跑批读的就是这几个变量。少一个 `--filter` 之类的必填项,runner 会直接退 2。
 
-<div class="row"><span class="dim">CI</span><span class="k">true</span><span class="v">GITHUB_ACTIONS</span></div>
-<div class="row"><span class="dim">CI</span><span class="k">run 99812</span><span class="v">GITHUB_RUN_ID</span></div>
-<div class="row"><span class="dim">main</span><span class="k">a7f3c91</span><span class="v">GITHUB_SHA</span></div>
-<div class="row"><span class="dim">feat/queue-v2</span><span class="k">queue-v2</span><span class="v">GITHUB_HEAD_REF</span></div>
-<div class="row"><span class="dim">22.21.1</span><span class="k">node</span><span class="v">NODE_VERSION</span></div>
+|  |  |  |
+|---|---|---|
+| <span class="dim">CI</span> | true | GITHUB_ACTIONS |
+| <span class="dim">CI</span> | run 99812 | GITHUB_RUN_ID |
+| <span class="dim">main</span> | a7f3c91 | GITHUB_SHA |
+| <span class="dim">feat/queue-v2</span> | queue-v2 | GITHUB_HEAD_REF |
+| <span class="dim">22.21.1</span> | node | NODE_VERSION |
 
 <span class="t-ref">runner-07 · ubuntu-24.04 · 4 vCPU</span>
 
@@ -35,17 +37,17 @@ CI 跑批读的就是这几个变量。少一个 `--filter` 之类的必填项,r
 
 `npm ci` 跑完,工作区多出来的是一棵固定的树 —— 每一层都能追到 `package.json` 里的哪一行。
 
-<div class="tree">
-<div class="line"><span class="b">▸</span><span class="d">node_modules/</span><span class="m">1 284 packages · 312 MB</span></div>
-<div class="line"><span class="b">├──</span><span class="d">@x-cmd/core</span><span class="f">@0.14.2</span><span class="m">2.1 MB</span></div>
-<div class="line"><span class="b">├──</span><span class="d">@x-cmd/sh</span><span class="f">@0.14.2</span><span class="m">1.4 MB</span></div>
-<div class="line"><span class="b">│</span><span class="b">└──</span><span class="d">@x-cmd/lib</span><span class="f">@0.14.2</span><span class="m">640 KB</span></div>
-<div class="line"><span class="b">├──</span><span class="f">reveal.js</span><span class="f">@6.0.2</span><span class="m">3.8 MB</span></div>
-<div class="line"><span class="b">├──</span><span class="f">marked</span><span class="f">@16.4.1</span><span class="m">410 KB</span></div>
-<div class="line"><span class="b">└──</span><span class="d">.cache/</span><span class="m">toolchain 4.155 · 已缓存</span></div>
-</div>
+```text
+▸ node_modules/                            1 284 packages · 312 MB
+├── @x-cmd/core @0.14.2                     2.1 MB
+├── @x-cmd/sh @0.14.2                       1.4 MB
+│ └── @x-cmd/lib @0.14.2                    640 KB
+├── reveal.js @6.0.2                        3.8 MB
+├── marked @16.4.1                          410 KB
+└── .cache/               toolchain 4.155 · 已缓存
+```
 
-<p class="tree-sum">合计 1 284 个包 · 312 MB · lockfile v3 · 无 network fallback</p>
+合计 1 284 个包 · 312 MB · lockfile v3 · 无 network fallback
 
 <span class="t-ref">npm 11.4.0 · --prefer-offline</span>
 
@@ -84,11 +86,13 @@ $ npx x-cmd doctor
 
 环境装完就开跑:五个作业并行,谁先红谁先说话。
 
-<div class="row"><span class="ok">✓</span><span class="k">build</span><span class="v">passed</span><span class="n">1m 12s</span></div>
-<div class="row"><span class="ok">✓</span><span class="k">lint</span><span class="v">passed</span><span class="n">0m 21s</span></div>
-<div class="row"><span class="err">✗</span><span class="k">test</span><span class="v">failed</span><span class="n">2m 48s</span></div>
-<div class="row"><span class="warn">●</span><span class="k">e2e</span><span class="v">skipped</span><span class="n">—</span></div>
-<div class="row"><span class="dim">◷</span><span class="k">release</span><span class="v">blocked by test</span><span class="n">—</span></div>
+|  |  |  |  |
+|---|---|---|---|
+| <span class="ok">✓</span> | build | passed | 1m 12s |
+| <span class="ok">✓</span> | lint | passed | 0m 21s |
+| <span class="err">✗</span> | test | failed | 2m 48s |
+| <span class="warn">●</span> | e2e | skipped | — |
+| <span class="dim">◷</span> | release | blocked by test | — |
 
 <span class="t-ref">run 99812 · 2026-11-25 03:14</span>
 
@@ -111,9 +115,11 @@ $ npm test -- --reporter=dot
      at src/core/queue.ts:118:23
 ```
 
-<div class="row"><span class="err">✗</span><span class="k">queue drains in order</span><span class="v">queue.ts:118</span></div>
-<div class="row"><span class="err">✗</span><span class="k">drain is atomic</span><span class="v">queue.ts:118</span></div>
-<div class="row"><span class="dim">···</span><span class="k">其余 10 个用例</span><span class="v">同一条栈</span></div>
+|  |  |  |
+|---|---|---|
+| <span class="err">✗</span> | queue drains in order | queue.ts:118 |
+| <span class="err">✗</span> | drain is atomic | queue.ts:118 |
+| <span class="dim">···</span> | 其余 10 个用例 | 同一条栈 |
 
 <span class="t-ref">test/queue.test.ts · 12 failing</span>
 
@@ -127,14 +133,18 @@ $ npm test -- --reporter=dot
 
 CI 里那条命令不是死的 —— 参数表就这么多,写错了 runner 会直接退 2。
 
-<div class="usage"><span class="p">$</span> x ci run <span class="q">--jobs 4 --timeout 900 --retry 3 --artifact --filter queue</span></div>
+```text
+$ x ci run --jobs 4 --timeout 900 --retry 3 --artifact --filter queue
+```
 
-<div class="arg"><span class="k">--jobs</span><span class="s">-j</span><span class="v">并行作业数,上限受 runner CPU 限制</span><span class="n">4</span></div>
-<div class="arg"><span class="k">--timeout</span><span class="s">-t</span><span class="v">单个作业超时秒数,超了判 failed</span><span class="n">900</span></div>
-<div class="arg"><span class="k">--retry</span><span class="s">-r</span><span class="v">失败重试次数,重试用例结果不覆盖首跑</span><span class="n">3</span></div>
-<div class="arg"><span class="k">--artifact</span><span class="s">-a</span><span class="v">上传日志与产物到制品库</span><span class="n">true</span></div>
-<div class="arg"><span class="k">--filter</span><span class="s">-f</span><span class="v">只跑匹配的名字,逗号分隔</span><span class="n req">required</span></div>
-<div class="arg"><span class="k">--branch</span><span class="s">-b</span><span class="v">跑批分支,默认取当前 HEAD</span><span class="n">HEAD</span></div>
+|  |  |  |
+|---|---|---|
+| --jobs -j | 并行作业数,上限受 runner CPU 限制 | 4 |
+| --timeout -t | 单个作业超时秒数,超了判 failed | 900 |
+| --retry -r | 失败重试次数,重试用例结果不覆盖首跑 | 3 |
+| --artifact -a | 上传日志与产物到制品库 | true |
+| --filter -f | 只跑匹配的名字,逗号分隔 | <span class="req">required</span> |
+| --branch -b | 跑批分支,默认取当前 HEAD | HEAD |
 
 <span class="t-ref">x ci run --help · v0.14.2</span>
 
@@ -156,9 +166,11 @@ replaying 1 failed job …
   captured trace → artifacts/run-99812/queue.trace
 ```
 
-<div class="row"><span class="err">✗</span><span class="k">3 次重试,3 次同样失败</span><span class="v">不是 flaky</span></div>
-<div class="row"><span class="dim">◷</span><span class="k">首跑到重试间隔</span><span class="v">间隔 2.1s</span></div>
-<div class="row"><span class="dim">◷</span><span class="k">trace 文件</span><span class="v">182 KB</span></div>
+|  |  |  |
+|---|---|---|
+| <span class="err">✗</span> | 3 次重试,3 次同样失败 | 不是 flaky |
+| <span class="dim">◷</span> | 首跑到重试间隔 | 间隔 2.1s |
+| <span class="dim">◷</span> | trace 文件 | 182 KB |
 
 <span class="t-ref">artifacts/run-99812/queue.trace</span>
 
@@ -172,15 +184,15 @@ replaying 1 failed job …
 
 从最外层往里读,第一帧是我们自己的代码,最后一行才是真正出问题的那一帧。
 
-<div class="stack">
-<div class="frame"><span class="n">src/node/cli.ts:44</span><span class="m">await run(argv)</span></div>
-<div class="frame"><span class="n">src/ci/runner.ts:96</span><span class="m">await job.test()</span></div>
-<div class="frame"><span class="n">src/core/worker.ts:71</span><span class="m">await queue.drain()</span></div>
-<div class="frame err"><span class="n">src/core/queue.ts:118</span><span class="m">await frame.commit()</span><span class="at">← 出错</span></div>
-<div class="frame"><span class="n">src/core/frame.ts:52</span><span class="m">await store.write()</span></div>
-</div>
+```text
+src/node/cli.ts:44          await run(argv)
+src/ci/runner.ts:96         await job.test()
+src/core/worker.ts:71       await queue.drain()
+src/core/queue.ts:118       await frame.commit()    ← 出错
+src/core/frame.ts:52        await store.write()
+```
 
-<p class="why">队列在并发 push 下丢了一帧 —— <b>读-改-写没有串行化</b>,两个 worker 同时拿到了同一个 head。</p>
+> 队列在并发 push 下丢了一帧 —— **读-改-写没有串行化**,两个 worker 同时拿到了同一个 head。
 
 <span class="t-ref">trace · 5 frames · 1 error</span>
 
@@ -194,13 +206,17 @@ replaying 1 failed job …
 
 不是环境问题 —— diff 一摊开就看见了:锁只加在了写的那一半。
 
-<div class="row"><span class="dim">M</span><span class="k">src/core/queue.ts</span><span class="v">+120 −12</span></div>
-<div class="row"><span class="dim">M</span><span class="k">src/core/frame.ts</span><span class="v">+64 −18</span></div>
-<div class="row"><span class="dim">M</span><span class="k">src/core/worker.ts</span><span class="v">+31 −7</span></div>
-<div class="row"><span class="dim">A</span><span class="k">test/queue.test.ts</span><span class="v">+88 −0</span></div>
+|  |  |  |
+|---|---|---|
+| <span class="dim">M</span> | src/core/queue.ts | +120 −12 |
+| <span class="dim">M</span> | src/core/frame.ts | +64 −18 |
+| <span class="dim">M</span> | src/core/worker.ts | +31 −7 |
+| <span class="dim">A</span> | test/queue.test.ts | +88 −0 |
 
-<div class="row"><span class="warn">●</span><span class="k">queue.ts:118</span><span class="v">锁只覆盖 write,没覆盖 read</span></div>
-<div class="row"><span class="dim">◷</span><span class="k">首次出现</span><span class="v">a7f3c91^</span></div>
+|  |  |  |
+|---|---|---|
+| <span class="warn">●</span> | queue.ts:118 | 锁只覆盖 write,没覆盖 read |
+| <span class="dim">◷</span> | 首次出现 | a7f3c91^ |
 
 <span class="t-ref">9 files changed, 303 insertions(+), 37 deletions(−)</span>
 
@@ -214,11 +230,13 @@ replaying 1 failed job …
 
 修完重跑,五个作业全绿,release 这一格才亮起来。
 
-<div class="row"><span class="ok">✓</span><span class="k">build</span><span class="v">passed</span><span class="n">1m 09s</span></div>
-<div class="row"><span class="ok">✓</span><span class="k">lint</span><span class="v">passed</span><span class="n">0m 19s</span></div>
-<div class="row"><span class="ok">✓</span><span class="k">test</span><span class="v">passed</span><span class="n">2m 41s</span></div>
-<div class="row"><span class="ok">✓</span><span class="k">e2e</span><span class="v">passed</span><span class="n">3m 02s</span></div>
-<div class="row"><span class="ok">✓</span><span class="k">release</span><span class="v">published</span><span class="n">0m 44s</span></div>
+|  |  |  |  |
+|---|---|---|---|
+| <span class="ok">✓</span> | build | passed | 1m 09s |
+| <span class="ok">✓</span> | lint | passed | 0m 19s |
+| <span class="ok">✓</span> | test | passed | 2m 41s |
+| <span class="ok">✓</span> | e2e | passed | 3m 02s |
+| <span class="ok">✓</span> | release | published | 0m 44s |
 
 <span class="t-ref">run 99813 · 2026-11-25 04:06</span>
 
@@ -232,12 +250,14 @@ replaying 1 failed job …
 
 发版产物就是一份版本清单 —— 版本号、构建号、装了哪些依赖,一行一行对齐。
 
-<div class="row"><span class="dim">pkg</span><span class="k">@x-cmd/ppt</span><span class="v">0.14.3</span></div>
-<div class="row"><span class="dim">build</span><span class="k">20261125.0406</span><span class="v">linux-arm64</span></div>
-<div class="row"><span class="dim">core</span><span class="k">@0.14.3</span><span class="v">core@0.14.3</span></div>
-<div class="row"><span class="dim">tool</span><span class="k">4.155.0</span><span class="v">compat 2026-09-01</span></div>
-<div class="row"><span class="dim">deps</span><span class="k">reveal 6.0.2</span><span class="v">marked 16.4.1</span></div>
-<div class="row"><span class="dim">sbom</span><span class="k">1 284 pkgs</span><span class="v">cyclonedx 1.6</span></div>
+|  |  |  |
+|---|---|---|
+| <span class="dim">pkg</span> | @x-cmd/ppt | 0.14.3 |
+| <span class="dim">build</span> | 20261125.0406 | linux-arm64 |
+| <span class="dim">core</span> | @0.14.3 | core\@0.14.3 |
+| <span class="dim">tool</span> | 4.155.0 | compat 2026-09-01 |
+| <span class="dim">deps</span> | reveal 6.0.2 | marked 16.4.1 |
+| <span class="dim">sbom</span> | 1 284 pkgs | cyclonedx 1.6 |
 
 <span class="t-ref">registry · @x-cmd/ppt@0.14.3</span>
 

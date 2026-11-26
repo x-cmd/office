@@ -57,7 +57,7 @@ n=u;fe;浏览器;;r0c0&n=app;fe;讲台;;r0c1&n=gh;ext;GitHub;;r0c2&n=dr;svc;draw
 
 | STEP 01 | STEP 02 | STEP 03 | STEP 04 |
 |---|---|---|---|
-| <span class="fl-name">取源</span><span class="fl-note">issue / PR / raw 归一成一个 URL</span> | <span class="fl-name">切页</span><span class="fl-note">`---` 与 `--` 分出主题与子页</span> | <span class="fl-name">展开图</span><span class="fl-note">draw 围栏换成内联矢量 SVG</span> | <span class="fl-name">渲染</span><span class="fl-note">讲台与封面图同源同版</span> |
+| 取源<br>issue / PR / raw 归一成一个 URL | 切页<br>`---` 与 `--` 分出主题与子页 | 展开图<br>draw 围栏换成内联矢量 SVG | 渲染<br>讲台与封面图同源同版 |
 
 --
 
@@ -125,9 +125,9 @@ n=tenants;table;tenants;id:uuid (pk)%0Aslug:text (uk)%0Aplan:text&n=users;table;
 
 # REV
 
-- <span class="rev-id">REV C</span><span class="rev-date">2026-11-25</span><span class="rev-text"><code>look: blueprint</code> 落到九种语义页型,老版式手写页全部换掉</span>
-- <span class="rev-id">REV B</span><span class="rev-date">2026-11-23</span><span class="rev-text">图种分流:<code>draw/&lt;kind&gt;</code> 走结构图端点,<code>draw</code> 走数据图端点</span>
-- <span class="rev-id">REV A</span><span class="rev-date">2026-11-18</span><span class="rev-text">首版 —— 链接即演示,封面图与讲台第一页永远一致</span>
+- **REV C** `2026-11-25` `look: blueprint` 落到九种语义页型,老版式手写页全部换掉
+- **REV B** `2026-11-23` 图种分流:`draw/<kind>` 走结构图端点,`draw` 走数据图端点
+- **REV A** `2026-11-18` 首版 —— 链接即演示,封面图与讲台第一页永远一致
 
 ---
 
@@ -141,12 +141,12 @@ n=tenants;table;tenants;id:uuid (pk)%0Aslug:text (uk)%0Aplan:text&n=users;table;
 
 | 键 | 功能 |
 |---|---|
-| <span class="key">←</span> <span class="key">→</span> | 换页(含纵向子页) |
-| <span class="key">S</span> | 演讲者备注(跨窗口同步) |
-| <span class="key">W</span> | 标注:画笔 / 荧光 / 划词 |
-| <span class="key">ESC</span> | 缩略图总览 |
-| <span class="key">F</span> | 全屏 |
-| <span class="key">?</span> | 快捷键速查 |
+| `←` `→` | 换页(含纵向子页) |
+| `S` | 演讲者备注(跨窗口同步) |
+| `W` | 标注:画笔 / 荧光 / 划词 |
+| `ESC` | 缩略图总览 |
+| `F` | 全屏 |
+| `?` | 快捷键速查 |
 
 --
 
@@ -172,11 +172,11 @@ n=tenants;table;tenants;id:uuid (pk)%0Aslug:text (uk)%0Aplan:text&n=users;table;
 
 # NOTES
 
-<span class="note"><span class="no">N-01</span>常见路径服务端零参与:浏览器自带 CORS 头,markdown 直接读回来</span> <!-- .element: class="note fragment" -->
-<span class="note"><span class="no">N-02</span>CORS 被挡才回落 Worker 代取 —— 服务端只做这一件难事</span> <!-- .element: class="note fragment" -->
-<span class="note"><span class="no">N-03</span>图表内联为矢量 SVG,缩放不糊</span> <!-- .element: class="note fragment" -->
-<span class="note"><span class="no">N-04</span>版式即海报:几何装饰由模板统一提供,deck 只写内容</span> <!-- .element: class="note fragment" -->
-<span class="note"><span class="no">N-05</span>输入只能是 URL 或 markdown —— 不接受二进制附件</span> <!-- .element: class="note fragment" -->
+- **N-01** 常见路径服务端零参与:浏览器自带 CORS 头,markdown 直接读回来
+- **N-02** CORS 被挡才回落 Worker 代取 —— 服务端只做这一件难事
+- **N-03** 图表内联为矢量 SVG,缩放不糊
+- **N-04** 版式即海报:几何装饰由模板统一提供,deck 只写内容
+- **N-05** 输入只能是 URL 或 markdown —— 不接受二进制附件
 
 --
 

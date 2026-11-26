@@ -76,10 +76,10 @@ transition: fade
 
 | 键 | 功能 |
 |---|---|
-| <span class="key">←</span> <span class="key">→</span> | 换页 |
-| <span class="key">S</span> | 演讲者备注(跨窗口同步)|
-| <span class="key">W</span> | 标注:画笔 / 荧光 / 划词 |
-| <span class="key">ESC</span> | 缩略图总览 |
+| `←` `→` | 换页 |
+| `S` | 演讲者备注(跨窗口同步)|
+| `W` | 标注:画笔 / 荧光 / 划词 |
+| `ESC` | 缩略图总览 |
 
 --
 
@@ -120,7 +120,7 @@ n=browser;fe;Browser;;r0c0&n=gh;ext;GitHub raw;;r0c1&n=draw;be;draw;;r0c2&e=brow
 
 | STEP 01 | STEP 02 | STEP 03 | STEP 04 |
 |---|---|---|---|
-| <span class="fl-name">取源</span><span class="fl-note">issue / PR / raw 归一成一个 URL</span> | <span class="fl-name">切页</span><span class="fl-note">— 与 --- 分出主题与子页</span> | <span class="fl-name">展开图</span><span class="fl-note">draw 围栏换成内联矢量 SVG</span> | <span class="fl-name">渲染</span><span class="fl-note">讲台与封面图同源同版</span> |
+| 取源<br>issue / PR / raw 归一成一个 URL | 切页<br>— 与 --- 分出主题与子页 | 展开图<br>draw 围栏换成内联矢量 SVG | 渲染<br>讲台与封面图同源同版 |
 
 --
 
@@ -130,9 +130,9 @@ n=browser;fe;Browser;;r0c0&n=gh;ext;GitHub raw;;r0c1&n=draw;be;draw;;r0c2&e=brow
 
 # REV
 
-- <span class="rev-id">REV C</span><span class="rev-date">2026-11-24</span><span class="rev-text"><code>look: blueprint</code> 落到九种语义页型,新增矩阵 / 流程 / 修订三张图纸</span>
-- <span class="rev-id">REV B</span><span class="rev-date">2026-11-18</span><span class="rev-text">版式即海报:几何装饰由模板统一提供,deck 只写内容</span>
-- <span class="rev-id">REV A</span><span class="rev-date">2026-11-11</span><span class="rev-text">首版 —— 链接即演示,封面图与讲台第一页永远一致</span>
+- **REV C** `2026-11-24` `look: blueprint` 落到九种语义页型,新增矩阵 / 流程 / 修订三张图纸
+- **REV B** `2026-11-18` 版式即海报:几何装饰由模板统一提供,deck 只写内容
+- **REV A** `2026-11-11` 首版 —— 链接即演示,封面图与讲台第一页永远一致
 
 ---
 
@@ -144,12 +144,12 @@ n=browser;fe;Browser;;r0c0&n=gh;ext;GitHub raw;;r0c1&n=draw;be;draw;;r0c2&e=brow
 
 | 键 | 功能 |
 |---|---|
-| <span class="key">←</span> <span class="key">→</span> | 换页(含纵向子页) |
-| <span class="key">S</span> | 演讲者备注 |
-| <span class="key">W</span> | 标注:画笔 / 荧光 / 划词 |
-| <span class="key">ESC</span> | 缩略图总览 |
-| <span class="key">F</span> | 全屏 |
-| <span class="key">?</span> | 快捷键速查 |
+| `←` `→` | 换页(含纵向子页) |
+| `S` | 演讲者备注 |
+| `W` | 标注:画笔 / 荧光 / 划词 |
+| `ESC` | 缩略图总览 |
+| `F` | 全屏 |
+| `?` | 快捷键速查 |
 
 --
 
@@ -159,11 +159,11 @@ n=browser;fe;Browser;;r0c0&n=gh;ext;GitHub raw;;r0c1&n=draw;be;draw;;r0c2&e=brow
 
 # NOTES
 
-<span class="note"><span class="no">N-01</span>输入只能是 URL 或 markdown —— 不接受二进制附件</span> <!-- .element: class="note fragment" -->
-<span class="note"><span class="no">N-02</span>注释即停用;指令注释(`.slide` / `.element`)是语法</span> <!-- .element: class="note fragment" -->
-<span class="note"><span class="no">N-03</span>图表内联为矢量 SVG,缩放不糊</span> <!-- .element: class="note fragment" -->
-<span class="note"><span class="no">N-04</span>版式即海报:几何装饰由模板统一提供,deck 只写内容</span> <!-- .element: class="note fragment" -->
-<span class="note"><span class="no">N-05</span>deck 上限 512KB;内容直传的总 URL 约 6KB</span> <!-- .element: class="note fragment" -->
+- **N-01** 输入只能是 URL 或 markdown —— 不接受二进制附件
+- **N-02** 注释即停用;指令注释(`.slide` / `.element`)是语法
+- **N-03** 图表内联为矢量 SVG,缩放不糊
+- **N-04** 版式即海报:几何装饰由模板统一提供,deck 只写内容
+- **N-05** deck 上限 512KB;内容直传的总 URL 约 6KB
 
 --
 

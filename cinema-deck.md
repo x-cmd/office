@@ -71,11 +71,13 @@ look: cinema
 
 # CREDITS
 
-<span class="row"><b>取回</b>x-cmd/office · 一份 markdown</span>
-<span class="row"><b>展开</b>src/slides.ts · 分页与版式</span>
-<span class="row"><b>放映</b>reveal.js 6 · 讲台上的黑场</span>
-<span class="row"><b>散场</b>x-cmd/draw · SVG 出图</span>
-<span class="row"><b>出品</b>X-CMD 研究室 · 2026</span>
+| | |
+| --- | --- |
+| **取回** | x-cmd/office · 一份 markdown |
+| **展开** | src/slides.ts · 分页与版式 |
+| **放映** | reveal.js 6 · 讲台上的黑场 |
+| **散场** | x-cmd/draw · SVG 出图 |
+| **出品** | X-CMD 研究室 · 2026 |
 
 --
 
@@ -83,7 +85,7 @@ look: cinema
 
 # 这份 deck 的每一页,都是仓库里的一行 markdown
 
-<span class="ci-note">x-cmd.com/ppt</span>
+x-cmd.com/ppt
 
 --
 
@@ -91,4 +93,4 @@ look: cinema
 
 # END
 
-<span class="ci-note">x-cmd.com/ppt</span>
+x-cmd.com/ppt
