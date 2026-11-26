@@ -3,6 +3,14 @@ title: 终端
 look: terminal
 ---
 
+<!-- .slide: data-layout="t-title" -->
+
+# 终端
+
+agent 干活的样子:命令、日志、退出码 —— 一份能回放的编译记录。
+
+---
+
 <!-- .slide: data-layout="t-log" -->
 
 # 一 · 装环境
