@@ -2,7 +2,7 @@
 template: deck
 theme: black
 cover:
-  title: ppt
+  title: PPT
   subtitle: 把 markdown 变成一场演讲
   author: x-cmd
   date: 2026-11-23
