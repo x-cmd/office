@@ -3,6 +3,10 @@ title: 增长账本
 theme: black
 look: keynote
 transition: fade
+poster:
+  title: 2.4×
+  subtitle: 三个月,月活 1 万 → 2.4 万 —— 自然流量占七成
+  tag: X-CMD INSIGHT · VOL.03
 ---
 
 <!-- .slide: data-layout="ad-hero" data-title="INSIGHT" class="ppt-decor ppt-decor--glow ppt-decor--rings ppt-decor--hairline ppt-ghost ppt-ghost--br" -->

@@ -3,6 +3,10 @@ title: 一屏一图
 theme: black
 look: keynote
 transition: fade
+poster:
+  title: 一屏一图
+  subtitle: 把数字讲成故事 —— 一张图,只讲一件事
+  tag: 数据图全家桶
 ---
 
 <!-- .slide: data-layout="ad-hero" data-title="2.4" class="ppt-decor ppt-decor--glow ppt-decor--rings ppt-decor--hairline ppt-ghost ppt-ghost--br" -->
