@@ -1,6 +1,10 @@
 ---
 title: 终端
 look: terminal
+poster:
+  title: 终端里的 agent
+  subtitle: 命令、日志、退出码 —— 一份能回放的编译记录
+  tag: TERMINAL REPORT
 ---
 
 <!-- .slide: data-layout="t-title" -->

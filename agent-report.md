@@ -1,6 +1,11 @@
 ---
 title: agent 的工作汇报
 look: report
+poster:
+  title: 这一轮 ppt 做了什么
+  subtitle: 版式即海报 —— 从内置版式扩到任意 deck
+  tag: AGENT REPORT
+  date: 2026-11-25
 ---
 
 <!-- .slide: data-layout="rep-verdict" class="rep-ok" -->

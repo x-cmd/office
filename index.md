@@ -2,11 +2,18 @@
 template: deck
 theme: black
 cover:
-  title: PPT
-  subtitle: 把 markdown 变成一场演讲
+  title: 把 markdown 变成一场演讲
+  subtitle: 一个长链接就是入口 —— 贴进 README,别人点开就能讲
+  tag: PPT · X-CMD
   author: x-cmd
-  date: 2026-11-23
+  date: 2026-11-28
   background: radial-gradient(#1c3050 0%, #122036 55%, #0b1120 100%)
+poster:
+  title: 把 markdown 变成一场演讲
+  subtitle: 一个长链接就是入口 —— 贴进 README,别人点开就能讲
+  tag: PPT · X-CMD
+  author: x-cmd
+  date: 2026-11-28
 ---
 
 <!-- .slide: data-layout="gallery" data-columns="2" -->
